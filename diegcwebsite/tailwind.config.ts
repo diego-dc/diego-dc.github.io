@@ -20,6 +20,9 @@ const config: Config = {
         background: 'var(--color-background)',
         text: 'var(--color-text)',
       },
+      textColor: {
+        color: 'var(--color-accent)'
+      }
     },
   },
   plugins: [],
