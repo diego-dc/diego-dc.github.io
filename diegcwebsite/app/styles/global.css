@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* global.css */
+
+/* Variables CSS */
+:root {
+    --color-primary: #000000;
+    --color-secondary: #14213d;
+    --color-tertiary: #fca311;
+    --color-accent: #ffffff;
+    --color-light: #e5e5e5;
+    --color-background: #000000;
+    --color-text: #2d3748;
+    --font-primary: 'Outfit', sans-serif;
+}
+
 body {
     background-color: black;
     color: white;
