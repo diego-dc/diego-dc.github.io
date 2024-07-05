@@ -6,6 +6,8 @@
 
 /* Variables CSS */
 :root {
+
+    /* --Pallette-- */
     --color-primary: #000000;
     --color-secondary: #14213d;
     --color-tertiary: #fca311;
@@ -14,6 +16,9 @@
     --color-background: #000000;
     --color-text: #2d3748;
     --font-primary: 'Outfit', sans-serif;
+    
+    /* --Gradients--*/
+    --gradient-tags: linear-gradient(170deg, var(--color-accent) 0%, var(--color-tertiary) 80%);
 }
 
 body {
