@@ -1,11 +1,26 @@
 'use client'
 import Head from 'next/head';
-import gsap from 'gsap';
-import { useLayoutEffect, useRef } from "react";
 import Background from './components/Background/Background';
 import Thumbnail from './components/Thumbnail/Thumbnail';
+import { useGSAP } from "@gsap/react";
+import React from "react";
+import { gsap } from 'gsap';
+import { TextPlugin } from 'gsap/TextPlugin';
+import "../gsap/effects";
+
+gsap.registerPlugin(TextPlugin);
 
 export default function Page() {
+  useGSAP(() => {
+    const tl_start = gsap.timeline({delay: 5});
+    const tl = gsap.timeline({delay: 8, repeat: -1, repeatDelay: 1.5, yoyo: true});
+
+    tl_start.fadeIn('.textAd');
+
+    tl.to('.textAd', { text: "Stay tuned...", duration: 4 });
+
+      
+}, []);
 
   return (
     <>
@@ -19,6 +34,7 @@ export default function Page() {
           <Background></Background>
           <Thumbnail></Thumbnail>
         </section>
+        <p className='text-xl md:text-2xl absolute bottom-[64px] text-white textAd opacity-0'>Work in progress...</p>
       </main>
     </>
   );

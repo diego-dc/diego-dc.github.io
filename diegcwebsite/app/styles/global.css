@@ -10,20 +10,20 @@
     /* --Pallette-- */
     --color-primary: #000000;
     --color-secondary: #14213d;
-    --color-tertiary: #fca311;
+    --color-highlight: #fca311;
     --color-accent: #ffffff;
     --color-light: #e5e5e5;
     --color-background: #000000;
-    --color-text: #2d3748;
+    --color-text: #ffffff;
     --font-primary: 'Outfit', sans-serif;
     
     /* --Gradients--*/
-    --gradient-tags: linear-gradient(170deg, var(--color-accent) 0%, var(--color-tertiary) 80%);
+    --gradient-tags: linear-gradient(170deg, var(--color-accent) 0%, var(--color-highlight) 80%);
 }
 
 body {
     background-color: var(--color-background);
-    color: white;
+    color: var(--color-text);
 }
 
 section{
