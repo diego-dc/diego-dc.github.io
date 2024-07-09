@@ -43,5 +43,14 @@
         "react": {
             "version": "detect"
         }
+    },
+    "overrides": [
+    {
+      "files": ["next.config.mjs"],
+      "rules": {
+        "no-undef": "off",
+        "no-unused-vars": "off"
+      }
     }
+  ]
 }
