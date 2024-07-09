@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global.css */
+
+/* Variables CSS */
+:root {
+
+    /* --Pallette-- */
+    --color-primary: #000000;
+    --color-secondary: #14213d;
+    --color-highlight: #fca311;
+    --color-accent: #ffffff;
+    --color-light: #e5e5e5;
+    --color-background: #000000;
+    --color-text: #ffffff;
+    --font-primary: 'Outfit', sans-serif;
+    
+    /* --Gradients--*/
+    --gradient-tags: linear-gradient(170deg, var(--color-accent) 0%, var(--color-highlight) 80%);
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
