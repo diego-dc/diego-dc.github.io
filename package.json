@@ -2,19 +2,18 @@
   "name": "diegcwebsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/diego-dc/diego-dc.github.io.git",
+  "homepage": "https://diego-dc.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "gsap": "^3.12.5",
-    "jslint": "^0.12.1",
     "next": "^14.2.4",
     "react": "^18",
     "react-dom": "^18"

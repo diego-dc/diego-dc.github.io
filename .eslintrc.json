@@ -10,33 +10,47 @@
         "plugin:react-hooks/recommended",
         "plugin:jsx-a11y/recommended",
         "plugin:import/errors",
-        "plugin:import/warnings"
+        "plugin:import/warnings",
+        "plugin:@typescript-eslint/recommended",
+        "next/core-web-vitals"
     ],
-    "parser": "@babel/eslint-parser",
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
-        "jsx": true
+            "jsx": true
         },
         "ecmaVersion": 12,
         "sourceType": "module",
-        "requireConfigFile": false
+        "project": "./tsconfig.json",
+        "tsconfigRootDir": "./"
     },
     "plugins": [
         "react",
         "react-hooks",
         "jsx-a11y",
-        "import"
+        "import",
+        "@typescript-eslint"
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off",
         "no-unused-vars": "warn",
         "react/jsx-uses-react": "off",
-        "react/jsx-uses-vars": "warn"
+        "react/jsx-uses-vars": "warn",
+        "@typescript-eslint/no-unused-vars": "warn"
     },
     "settings": {
         "react": {
-        "version": "detect"
+            "version": "detect"
         }
+    },
+    "overrides": [
+    {
+      "files": ["next.config.mjs"],
+      "rules": {
+        "no-undef": "off",
+        "no-unused-vars": "off"
+      }
     }
-}  
+  ]
+}
