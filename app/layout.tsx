@@ -1,8 +1,8 @@
 import { Outfit } from 'next/font/google';
 import type { Metadata } from "next";
-import "./styles/global.css";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import "../styles/global.css";
 
 
 gsap.registerPlugin(useGSAP);

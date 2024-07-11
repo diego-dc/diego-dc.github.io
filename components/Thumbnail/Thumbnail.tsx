@@ -2,9 +2,9 @@
 
 import React from "react";
 import { gsap } from 'gsap';
-import "../../../gsap/effects";
-import "./Thumbnail.css"
+import "../../gsap/effects";
 import { useGSAP } from "@gsap/react";
+import "./Thumbnail.css"
 
 const Thumbnail = () => {
 
