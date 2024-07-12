@@ -17,9 +17,9 @@ const AboutSection = () => {
 
         blurRows.forEach(autoBlur => {
             gsap.to(autoBlur, {
-                duration: 1, 
+                duration: 0.5, 
                 filter: 'blur(0px)',
-                color: 'var(--color-tertiary) !important;',
+                color: 'var(--color-accent)',
                 stagger: 0.2,
                 scrollTrigger: {
                     trigger: autoBlur,
@@ -27,7 +27,6 @@ const AboutSection = () => {
                     end: "bottom 46%",
                     toggleActions: "play reverse play reverse",
                     scrub: false,
-                    markers: true,
                 },
             })
         });
@@ -36,7 +35,7 @@ const AboutSection = () => {
     return (
         <div className="container-lg w-full">
             <div className="grid grid-rows-5 grid-cols-6 text-nowrap">
-                <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-9xl uppercase mb-2 col-start-2 col-end-7">Diego-dc</div>
+                <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-9xl uppercase mb-2 col-start-1 col-end-7">Coding with</div>
                 <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-9xl uppercase mb-2 col-start-2 col-end-6 text-right">Purpose</div>
                 <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-9xl uppercase mb-2 col-start-2 col-end-6 ">Creativity</div>
                 <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-9xl uppercase mb-2 col-start-2 col-end-7 text-right">Innovation</div>
