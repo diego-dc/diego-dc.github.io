@@ -13,7 +13,7 @@ export default function KCLPARTPage() {
             </Head>
             <main className="flex flex-col min-h-screen z-10">
                 <Background></Background>
-                <section id='Thumbnail' className='flex min-h-screen w-full p-0 inset-0 relative'>
+                <section id='Thumbnail' className='flex min-h-screen w-full px-0 pb-0 pt-10 inset-0 relative'>
                     <KCLPThumbnail></KCLPThumbnail>
                 </section>
             </main>

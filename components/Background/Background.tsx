@@ -21,16 +21,16 @@ const Background = () => {
 
         <div className='absolute inset-0 z-0'>
             <div className="fixed aspect-square w-full hidden lg:block sm:w-3/4 md:w-10/12 lg:w-1/3 xl:min-h-[45%] xl:w-auto xl:min-w-[25%] -right-1/2 -top-8 sm:-right-1/4 sm:-top-20 lg:right-0 lg:top-0 spotlight-top-right">
-                <div className="bg-[--color-secondary] size-full rounded-full opacity-75 blur-[100px] transition [transform:translate3d(0,0,0)] md:blur-[150px] lg:blur-[100px] xl:blur-[200px]"></div>
+                <div className="bg-[--color-secondary] size-full rounded-full opacity-75 blur-[100px] transition [transform:translate3d(0,0,0)]"></div>
             </div>
             <div className="fixed aspect-square w-full sm:w-3/4 md:w-10/12 lg:w-1/6 xl:min-h-[25%] xl:w-auto xl:min-w-[15%] -right-1/2 -top-8 sm:-right-1/4 sm:-top-20 lg:right-[55%] lg:top-0 spotlight-top-left">
-                <div className="bg-[--color-highlight] size-full rounded-full opacity-35 blur-[100px] transition [transform:translate3d(0,0,0)] md:blur-[150px] lg:blur-[100px] xl:blur-[200px]"></div>
+                <div className="bg-[--color-highlight] size-full rounded-full opacity-35 blur-[100px] transition [transform:translate3d(0,0,0)]"></div>
             </div>
             <div className="fixed aspect-square w-full sm:w-3/4 md:w-10/12 lg:w-1/3 xl:min-h-[50%] xl:w-auto xl:min-w-[30%] -bottom-8 -left-1/2 sm:-bottom-20 sm:-left-1/4 lg:bottom-0 lg:left-0 spotlight-bottom-left">
-                <div className="bg-[--color-secondary] size-full rounded-full opacity-75 blur-[100px] transition [transform:translate3d(0,0,0)] md:blur-[150px] lg:blur-[100px] xl:blur-[200px]"></div>
+                <div className="bg-[--color-secondary] size-full rounded-full opacity-75 blur-[100px] transition [transform:translate3d(0,0,0)]"></div>
             </div>
             <div className="fixed aspect-square w-full hidden lg:block sm:w-3/4 md:w-10/12 lg:w-1/6 xl:min-h-[30%] xl:w-auto xl:min-w-[20%] -bottom-8 -left-1/2 sm:-bottom-20 sm:-left-1/4 lg:bottom-0 lg:left-[55%] spotlight-bottom-right">
-                <div className="bg-[--color-highlight] size-full rounded-full opacity-30 blur-[100px] transition [transform:translate3d(0,0,0)] md:blur-[150px] lg:blur-[100px] xl:blur-[200px]"></div>
+                <div className="bg-[--color-highlight] size-full rounded-full opacity-30 blur-[100px] transition [transform:translate3d(0,0,0)]"></div>
             </div>
         </div>
     );

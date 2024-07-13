@@ -8,6 +8,7 @@ import Background from '../components/Background/Background';
 import Thumbnail from '../components/Thumbnail/Thumbnail';
 import ScrollLine from '../components/ScrollLine/ScrollLine';
 import AboutSection from '../components/AboutSection/AboutSection';
+import PortfolioSection from '../components/PortfolioSection/PortfolioSection';
 
 export default function Page() {
   return (
@@ -27,8 +28,8 @@ export default function Page() {
           <AboutSection></AboutSection>
           <ScrollLine height={6}></ScrollLine>
         </section>
-        <section id='AboutSection' className='flex relative min-h-fit p-64 items-center justify-center'>
-
+        <section id='AboutSection' className='relative px-0'>
+          <PortfolioSection></PortfolioSection>
         </section>
       </main>
     </>

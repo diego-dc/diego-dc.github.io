@@ -1,0 +1,48 @@
+/* PortfolioArticle.css */
+
+.project-item {
+    display: grid;
+    grid-template-areas:
+    "index title year"
+    "empty tags other";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+}
+
+.project-item-t {
+    display: grid;
+    grid-template-areas:
+    "index title year"
+    "empty tags other";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+}
+
+.project-item-m {
+    display: grid;
+    grid-template-areas:
+    "index title year"
+    "empty tags other";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+}
+
+.project-item-index{
+    grid-area: index; 
+}
+
+.project-item-title{
+    grid-area: title; 
+}
+
+.project-item-year{
+    grid-area: year; 
+}
+
+.project-item-tags{
+    grid-area: tags; 
+}
+
+.project-item-other{
+    grid-area: other; 
+}
