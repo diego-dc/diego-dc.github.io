@@ -30,7 +30,7 @@ const Navbar = () => {
 
     return (
         <nav className={header ? "bg-[rgb(0,0,0,0.2)] z-50 fixed w-[100%] " : "bg-[transparent] z-50 fixed w-[100%]"}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
                         <div className="flex-shrink-0">

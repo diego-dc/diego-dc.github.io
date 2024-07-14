@@ -1,0 +1,65 @@
+/* PortfolioArticle.css */
+
+.project-item {
+    display: grid;
+    grid-template-areas:
+    "index title year"
+    "empty tags other";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+}
+
+.project-item-t {
+    display: grid;
+    grid-template-areas:
+    "index title year"
+    "empty tags other";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+}
+
+.project-item-m {
+    display: grid;
+    grid-template-areas:
+    "index title year"
+    "empty tags other";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+}
+
+.project-item-index{
+    grid-area: index; 
+}
+
+.project-item-title{
+    grid-area: title; 
+}
+
+.project-item-year{
+    grid-area: year; 
+}
+
+.project-item-tags{
+    grid-area: tags; 
+}
+
+.project-item-other{
+    grid-area: other; 
+}
+
+.image-card {
+    border-radius: .25rem;
+    border-width: 1px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border-color: rgb(68, 68, 68);
+    background-color: rgb(26,26,26);
+    -o-object-fit: cover;
+    object-fit: cover;
+    transition-duration: .5s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.615,.19,.305,.91);
+}
