@@ -39,7 +39,23 @@ const AboutSection = () => {
                 <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-9xl uppercase mb-2 col-start-2 col-end-6 text-right">Purpose</div>
                 <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-9xl uppercase mb-2 col-start-2 col-end-6 ">Creativity</div>
                 <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-9xl uppercase mb-2 col-start-2 col-end-7 text-right">Innovation</div>
-                <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-9xl uppercase col-start-1 col-end-6">Learn more</div>
+                <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-9xl uppercase col-start-1 col-end-6 flex flex-row">
+                    Learn more
+                    <span>
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="100%" 
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            stroke-width="1.5" 
+                            stroke-linecap="butt" 
+                            stroke-linejoin="round"
+                        >
+                            <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                        </svg>
+                    </span>
+                </div>
             </div>
         </div>
     );

@@ -1,0 +1,37 @@
+.swiper {
+    width: 500px;
+    height: 550px;
+    position: absolute !important;
+  }
+  
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid var(--color-light);
+}
+
+.swiper-slide:hover {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.swiper-slide.active-slide {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.swiper-slide.active-slide:hover {
+    background-color: var(--color-highlight);
+    box-shadow: 0 8px 6px -6px var(--color-primary);
+}
+
+.mySwiper .swiper-slide.active-slide:hover {
+    box-shadow: inset 0px 0px 150px 50px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0px 0px 150px 50px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 0px 150px 50px rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+  
