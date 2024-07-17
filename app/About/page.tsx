@@ -1,7 +1,11 @@
-import Background from "@/components/Background/Background";
-import Thumbnail from "@/components/Thumbnail/Thumbnail";
 import Link from "next/link";
 import Head from 'next/head';
+
+import Background from "@/components/Background/Background";
+import ThumbnailAbout from "@/components/ThumbnailAbout/ThumbnailAbout";
+import ScrollLine from "@/components/ScrollLine/ScrollLine";
+import ContactCarousel from "@/components/ContactCarousel/ContactCarousel";
+import TechnologiesSection from "@/components/TechnologiesSection/TechnologiesSection";
 
 export default function About() {
     return (
@@ -13,8 +17,18 @@ export default function About() {
             </Head>
             <main className="flex flex-col min-h-screen z-10">
                 <Background></Background>
-                <section id='Thumbnail' className='flex min-h-screen max-h-screen min-w-full items-center justify-center relative'>
-                    
+                <section id='ThumbnailAbout' className='flex min-h-screen max-h-screen min-w-full items-center justify-center relative p-0'>
+                    <ThumbnailAbout></ThumbnailAbout>
+                    <ScrollLine height={7}></ScrollLine>
+                </section>
+                <section id='AboutMe' className='flex min-h-screen max-h-screen min-w-full items-center justify-center relative p-0'>
+
+                </section>
+                <section id='Technologies' className='flex min-h-screen max-h-screen min-w-full items-center justify-center relative p-0'>
+                    <TechnologiesSection></TechnologiesSection>
+                </section>
+                <section id='ContactMe' className='p-0'>
+                    <ContactCarousel></ContactCarousel>
                 </section>
             </main>
         </>

@@ -32,7 +32,7 @@ const PortfolioSection = () => {
         <div className="container flex flex-col gap-12">
             <div className="flex justify-center">
                 <h2 className="text-6xl">
-                    Project <span className="text-[var(--color-highlight)]">Highlights</span>
+                    Projects <span className="text-[var(--color-highlight)]">Highlights</span>
                 </h2>
             </div>
             <div className="flex flex-col gap-[1rem] mx-auto w-full xl:w-[85%]">
