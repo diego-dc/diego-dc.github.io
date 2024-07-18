@@ -48,9 +48,9 @@ const AboutSection = () => {
                             viewBox="0 0 24 24" 
                             fill="none" 
                             stroke="currentColor" 
-                            stroke-width="1.5" 
-                            stroke-linecap="butt" 
-                            stroke-linejoin="round"
+                            strokeWidth="1.5" 
+                            strokeLinecap="butt" 
+                            strokeLinejoin="round"
                         >
                             <path d="M7 17l9.2-9.2M17 17V7H7"/>
                         </svg>

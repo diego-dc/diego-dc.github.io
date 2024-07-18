@@ -10,12 +10,9 @@ import ScrollLine from '../components/ScrollLine/ScrollLine';
 import AboutSection from '../components/AboutSection/AboutSection';
 import PortfolioSection from '../components/PortfolioSection/PortfolioSection';
 import ContactCarousel from '@/components/ContactCarousel/ContactCarousel';
-import Script from 'next/script';
 
 export default function Page() {
 
-
-  
   return (
     <>
       <Head>

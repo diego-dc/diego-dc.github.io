@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import "../styles/global.css";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar/Navbar";
 
 
 gsap.registerPlugin(useGSAP);
