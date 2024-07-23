@@ -22,8 +22,9 @@ export default function About() {
                     <ThumbnailAbout></ThumbnailAbout>
                     <ScrollLine height={7}></ScrollLine>
                 </section>
-                <section id='AboutMe' className='relative min-h-screen max-h-screen min-w-full p-0'>
+                <section id='AboutMe' className='relative min-h-[400px] min-w-full p-0'>
                     <AboutDraggable></AboutDraggable>
+                    <ScrollLine height={7}></ScrollLine>
                 </section>
                 <section id='Technologies' className='flex min-h-screen max-h-screen min-w-full items-center justify-center relative p-0'>
                     <TechnologiesSection></TechnologiesSection>
