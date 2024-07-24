@@ -24,9 +24,8 @@ export default function About() {
                 </section>
                 <section id='AboutMe' className='relative min-h-[400px] min-w-full p-0'>
                     <AboutDraggable></AboutDraggable>
-                    <ScrollLine height={7}></ScrollLine>
                 </section>
-                <section id='Technologies' className='flex min-h-screen max-h-screen min-w-full items-center justify-center relative p-0'>
+                <section id='Technologies' className='flex min-h-screen max-h-screen min-w-full items-center relative p-0'>
                     <TechnologiesSection></TechnologiesSection>
                 </section>
                 <section id='ContactMe' className='p-0'>

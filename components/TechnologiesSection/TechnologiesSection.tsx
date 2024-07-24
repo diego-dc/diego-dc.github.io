@@ -1,6 +1,8 @@
 "use react"
 
 import React from "react"
+import Image from 'next/image'
+import "./TechnologiesSection.css"
 
 const TechnologiesSection = () => {
 
@@ -12,18 +14,102 @@ const TechnologiesSection = () => {
                 </h2>
                 <h2 className="text-6xl text-[var(--color-highlight)]">work with</h2>
             </div>
-            <div className="container bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12">
-                <div className="grid grid-cols-4 text-center gap-12">
-                    <div className="text-xl">Texto</div>
-                    <div className="text-xl">Texto</div>
-                    <div className="text-xl">Texto</div>
-                    <div className="text-xl">Texto</div>
-                    <div className="text-xl">Texto</div>
-                    <div className="text-xl">Texto</div>
-                    <div className="text-xl">Texto</div>
-                    <div className="text-xl">Texto</div>
+            <div className="relative flex flex-col gap-0 justify-center items-center">
+                <div className="scroll-line-static-top top-0" style={{ height: `9rem`}}></div>
+                <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12">
+                    <div className="grid grid-cols-4 gap-12">
+                        <div className="h-12 w-full flex items-center justify-center">
+                            <Image 
+                                alt="CSS"
+                                width={0}
+                                height={0}
+                                style={{ width: 'auto', height: '100%' }}
+                                src={"/img/logos/css-3.svg"}
+                                title="CSS"
+                            >
+                            </Image>
+                        </div>
+                        <div className="h-12 w-full flex items-center justify-center">
+                            <Image 
+                                alt="Python"
+                                width={0}
+                                height={0}
+                                style={{ width: 'auto', height: '100%' }}
+                                src={"/img/logos/python-5.svg"}
+                                title="Python"
+                            >
+                            </Image>
+                        </div>
+                        <div className="h-12 w-full flex items-center justify-center">
+                            <Image 
+                                alt="Javascript"
+                                width={0}
+                                height={0}
+                                style={{ width: 'auto', height: '100%' }}
+                                src={"/img/logos/logo-javascript.svg"}
+                                title="Javascript"
+                            >
+                            </Image>
+                        </div>
+                        <div className="h-12 w-full flex items-center justify-center">
+                            <Image 
+                                alt="React"
+                                width={0}
+                                height={0}
+                                style={{ width: 'auto', height: '100%' }}
+                                src={"/img/logos/react-2.svg"}
+                                title="React"
+                            >
+                            </Image>
+                        </div>
+                        <div className="h-12 w-full flex items-center justify-center">
+                            <Image 
+                                alt="Django"
+                                width={0}
+                                height={0}
+                                style={{ width: 'auto', height: '100%' }}
+                                src={"/img/logos/django.svg"}
+                                title="Django"
+                            >
+                            </Image>
+                        </div>
+                        <div className="h-12 w-full flex items-center justify-center">
+                            <Image 
+                                alt="Tailwind"
+                                width={0}
+                                height={0}
+                                style={{ width: 'auto', height: '100%' }}
+                                src={"/img/logos/tailwind-css-1.svg"}
+                                title="Tailwind"
+                            >
+                            </Image>
+                        </div>
+                        <div className="h-12 w-full flex items-center justify-center">
+                            <Image 
+                                alt="Bootstrap"
+                                width={0}
+                                height={0}
+                                style={{ width: 'auto', height: '100%' }}
+                                src={"/img/logos/bootstrap-5.svg"}
+                                title="Bootstrap"
+                            >
+                            </Image>
+                        </div>
+                        <div className="h-12 w-full flex items-center justify-center">
+                            <Image 
+                                alt="GSAP"
+                                width={0}
+                                height={0}
+                                style={{ width: 'auto', height: '100%', color: 'gray' }}
+                                src={"/img/logos/gsap-greensock.svg"}
+                                title="GSAP"
+                            >
+                            </Image>
+                        </div>
+                    </div>
                 </div>
-            </div>  
+                <div className="scroll-line-static-bottom top-0" style={{ height: `9rem`}}></div>
+            </div>
         </div>
     );
 };
