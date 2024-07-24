@@ -17,8 +17,8 @@ const TechnologiesSection = () => {
             <div className="relative flex flex-col gap-0 justify-center items-center">
                 <div className="scroll-line-static-top top-0" style={{ height: `9rem`}}></div>
                 <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12">
-                    <div className="grid grid-cols-4 gap-12">
-                        <div className="h-12 w-full flex items-center justify-center">
+                    <div className="grid grid-cols-5 gap-12">
+                        <div className="h-14 w-full flex items-center justify-center">
                             <Image 
                                 alt="CSS"
                                 width={0}
@@ -29,7 +29,7 @@ const TechnologiesSection = () => {
                             >
                             </Image>
                         </div>
-                        <div className="h-12 w-full flex items-center justify-center">
+                        <div className="h-14 w-full flex items-center justify-center">
                             <Image 
                                 alt="Python"
                                 width={0}
@@ -40,7 +40,7 @@ const TechnologiesSection = () => {
                             >
                             </Image>
                         </div>
-                        <div className="h-12 w-full flex items-center justify-center">
+                        <div className="h-14 w-full flex items-center justify-center">
                             <Image 
                                 alt="Javascript"
                                 width={0}
@@ -51,7 +51,7 @@ const TechnologiesSection = () => {
                             >
                             </Image>
                         </div>
-                        <div className="h-12 w-full flex items-center justify-center">
+                        <div className="h-14 w-full flex items-center justify-center">
                             <Image 
                                 alt="React"
                                 width={0}
@@ -62,7 +62,7 @@ const TechnologiesSection = () => {
                             >
                             </Image>
                         </div>
-                        <div className="h-12 w-full flex items-center justify-center">
+                        <div className="h-14 w-full flex items-center justify-center">
                             <Image 
                                 alt="Django"
                                 width={0}
@@ -73,7 +73,7 @@ const TechnologiesSection = () => {
                             >
                             </Image>
                         </div>
-                        <div className="h-12 w-full flex items-center justify-center">
+                        <div className="h-14 w-full flex items-center justify-center">
                             <Image 
                                 alt="Tailwind"
                                 width={0}
@@ -84,7 +84,7 @@ const TechnologiesSection = () => {
                             >
                             </Image>
                         </div>
-                        <div className="h-12 w-full flex items-center justify-center">
+                        <div className="h-14 w-full flex items-center justify-center">
                             <Image 
                                 alt="Bootstrap"
                                 width={0}
@@ -95,17 +95,40 @@ const TechnologiesSection = () => {
                             >
                             </Image>
                         </div>
-                        <div className="h-12 w-full flex items-center justify-center">
+                        <div className="h-14 w-full flex items-center justify-center">
                             <Image 
                                 alt="GSAP"
                                 width={0}
                                 height={0}
-                                style={{ width: 'auto', height: '100%', color: 'gray' }}
+                                style={{ width: 'auto', height: '100%'}}
                                 src={"/img/logos/gsap-greensock.svg"}
                                 title="GSAP"
                             >
                             </Image>
                         </div>
+                        <div className="h-14 w-full flex items-center justify-center">
+                            <Image 
+                                alt="Angular"
+                                width={0}
+                                height={0}
+                                style={{ width: 'auto', height: '100%'}}
+                                src={"/img/logos/angular.svg"}
+                                title="Angular"
+                            >
+                            </Image>
+                        </div>
+                        <div className="h-14 w-full flex items-center justify-center">
+                            <Image 
+                                alt="NodeJs"
+                                width={0}
+                                height={0}
+                                style={{ width: 'auto', height: '100%'}}
+                                src={"/img/logos/nodejs.svg"}
+                                title="NodeJs"
+                            >
+                            </Image>
+                        </div>
+                        
                     </div>
                 </div>
                 <div className="scroll-line-static-bottom top-0" style={{ height: `9rem`}}></div>

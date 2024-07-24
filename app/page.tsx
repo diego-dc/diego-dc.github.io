@@ -26,11 +26,11 @@ export default function Page() {
           <Thumbnail></Thumbnail>
           <ScrollLine height={6}></ScrollLine>
         </section>
-        <section id='AboutSection' className='flex relative min-h-fit p-72 items-center justify-center'>
+        <section id='AboutSection' className='flex relative min-h-[400px] h-fit px-72 pb-52 items-center'>
           <AboutSection></AboutSection>
           <ScrollLine height={6}></ScrollLine>
         </section>
-        <section id='AboutSection' className='relative px-0'>
+        <section id='PortfolioSection' className='relative px-0'>
           <PortfolioSection></PortfolioSection>
         </section>
         <section id='ContactSection' className='p-0'>

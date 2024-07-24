@@ -44,7 +44,7 @@ const ThumbnailAbout = () => {
     return (
         <div className="container w-full flex flex-col items-center justify-center">
                 <div className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl mb-2">
-                    Hey, my name is <span className="text-[var(--color-highlight)]">Diego</span>.
+                    Hey! my name is <span className="text-[var(--color-highlight)]">Diego</span>.
                 </div>
                 <div className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl mb-2">
                     I&apos;m dedicated to coding with 
