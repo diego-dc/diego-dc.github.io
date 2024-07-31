@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import './ContactCarousel.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper as SwiperType } from 'swiper/types';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -14,7 +15,24 @@ import { EffectCards } from 'swiper/modules';
 
 const ContactCarousel = () => {
 
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(1);
+
+    const handleClick = (swiper: SwiperType,index:number) => {
+        if (index !== activeIndex) {
+          setActiveIndex(index);
+          swiper.slideTo(index);
+        }
+      };
+
+      const handleSlideClick = (e: React.MouseEvent<HTMLDivElement>, index: number) => {
+        const target = e.target as HTMLElement;
+        const swiperElement = target.closest('.swiper');
+        
+        if (swiperElement) {
+          const swiperInstance = (swiperElement as unknown as { swiper: SwiperType }).swiper;
+          handleClick(swiperInstance, index);
+        }
+      };
 
     return (
         <>
@@ -33,15 +51,17 @@ const ContactCarousel = () => {
                     }}
                     onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
                     >
-                    <SwiperSlide className={activeIndex === 0 ? 'active-slide' : ''}>
-                        <a href="/">
+                    <SwiperSlide
+                        className={activeIndex === 0 ? 'active-slide' : ''}
+                        onClick={(e: React.MouseEvent<HTMLDivElement>) => handleSlideClick(e, 0)}
+                    >
+                        <a href="/" onClick={(e) => activeIndex !== 0 && e.preventDefault()}>
                             <div className='p-8 flex flex-col items-center gap-8 w-full h-full'>
                                 <div className='text-3xl font-bold'>Linkedin</div>
                                 <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
                                     viewBox="0 0 448 512"
-                                    width={250}
-                                    height={250}
+                                    className="w-16 h-16 sm:w-24 sm:h-24 md:w-36 md:h-36 lg:w-56 lg:h-56 xl:w-64 xl:h-64"
                                     fill='currentColor'
                                 >
                                     <path 
@@ -51,15 +71,17 @@ const ContactCarousel = () => {
                             </div>
                         </a>
                     </SwiperSlide>
-                    <SwiperSlide className={activeIndex === 1 ? 'active-slide' : ''}>
-                    <a href="/">
+                    <SwiperSlide
+                        className={activeIndex === 1 ? 'active-slide' : ''}
+                        onClick={(e: React.MouseEvent<HTMLDivElement>) => handleSlideClick(e, 1)}
+                    >
+                    <a href="/" onClick={(e) => activeIndex !== 1 && e.preventDefault()}>
                             <div className='p-8 flex flex-col items-center gap-8 w-full h-full'>
-                                <div className='text-3xl font-bold'>email</div>
+                                <div className='text-3xl font-bold'>Email</div>
                                 <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
                                     viewBox="0 0 512 512"
-                                    width={250}
-                                    height={250}
+                                    className="w-16 h-16 sm:w-24 sm:h-24 md:w-36 md:h-36 lg:w-56 lg:h-56 xl:w-64 xl:h-64"
                                     fill='currentColor'
                                 >
                                         <path 
@@ -69,15 +91,17 @@ const ContactCarousel = () => {
                             </div>
                         </a>
                     </SwiperSlide>
-                    <SwiperSlide className={activeIndex === 2 ? 'active-slide' : ''}>
-                    <a href="/">
+                    <SwiperSlide
+                        className={activeIndex === 2 ? 'active-slide' : ''}
+                        onClick={(e: React.MouseEvent<HTMLDivElement>) => handleSlideClick(e, 2)}
+                    >
+                    <a href="/" onClick={(e) => activeIndex !== 2 && e.preventDefault()}>
                             <div className='p-8 flex flex-col items-center gap-8 w-full h-full'>
                                 <div className='text-3xl font-bold'>Github</div>
                                 <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
                                     viewBox="0 0 496 512"
-                                    width={250}
-                                    height={250}
+                                    className="w-16 h-16 sm:w-24 sm:h-24 md:w-36 md:h-36 lg:w-56 lg:h-56 xl:w-64 xl:h-64"
                                     fill='currentColor'
                                 >
                                         <path 
