@@ -65,22 +65,25 @@ const PortfolioSection = () => {
 
         const projectCards = gsap.utils.toArray<HTMLElement>('.project-card');
 
-        projectCards.forEach(projectCards => {
-            gsap.from(projectCards, {
-                opacity: 0,
-                x:-80,
-                stagger: 1,
-                duration: 3, 
-                scrollTrigger: {
-                    trigger: projectCards,
-                    start: "top 100%",
-                    end: "top 75%",
-                    markers: true,
-                    toggleActions: "play none reverse none",
-                    scrub: 5,
-                },
-            })
-        });
+        if (projectCards.length > 0){
+            
+            projectCards.forEach(projectCards => {
+                gsap.from(projectCards, {
+                    opacity: 0,
+                    x:-80,
+                    stagger: 1,
+                    duration: 3, 
+                    scrollTrigger: {
+                        trigger: projectCards,
+                        start: "top 100%",
+                        end: "top 75%",
+                        markers: true,
+                        toggleActions: "play none reverse none",
+                        scrub: 5,
+                    },
+                })
+            });
+        }
 
 
     }, []);
