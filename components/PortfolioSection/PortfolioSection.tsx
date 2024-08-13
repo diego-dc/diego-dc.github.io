@@ -68,7 +68,8 @@ const PortfolioSection = () => {
         projectCards.forEach(projectCards => {
             gsap.from(projectCards, {
                 opacity: 0,
-                stagger: 0.5,
+                x:-80,
+                stagger: 1,
                 duration: 3, 
                 scrollTrigger: {
                     trigger: projectCards,
@@ -76,7 +77,7 @@ const PortfolioSection = () => {
                     end: "top 75%",
                     markers: true,
                     toggleActions: "play none reverse none",
-                    scrub: 10,
+                    scrub: 5,
                 },
             })
         });
