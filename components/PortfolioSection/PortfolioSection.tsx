@@ -2,12 +2,10 @@
 "use client"
 
 import React from "react"
-import { useRef } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import { useGSAP } from "@gsap/react";
 import { gsap } from 'gsap';
 import SplitTextJS from 'split-text-js';
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 const projects = [
     {
@@ -53,7 +51,6 @@ const PortfolioSection = () => {
                         trigger: '.portfolio-container',
                         start: "top 100%",
                         end: "top 75%",
-                        markers: true,
                         toggleActions: "play none reverse none",
                         scrub: 5,
                     },
@@ -78,7 +75,6 @@ const PortfolioSection = () => {
                         trigger: projectCard,
                         start: "top 100%",
                         end: "top 75%",
-                        markers: true,
                         scrub: 2,
                     },
                 });
@@ -95,7 +91,6 @@ const PortfolioSection = () => {
                             start: "top 100%",
                             end: "top 75%",
                             toggleActions: "play none reverse none",
-                            markers: true,
                             scrub: 6,
                         },  
                     });
@@ -111,7 +106,6 @@ const PortfolioSection = () => {
                             start: "top 100%",
                             end: "top 75%",
                             toggleActions: "play none reverse none",
-                            markers: true,
                             scrub: 9,
                         },  
                     });
@@ -126,7 +120,6 @@ const PortfolioSection = () => {
                             start: "top 100%",
                             end: "top 75%",
                             toggleActions: "play none reverse none",
-                            markers: true,
                             scrub: 12,
                         },  
                     });
