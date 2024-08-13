@@ -37,8 +37,6 @@ const PortfolioSection = () => {
         
         const titles = gsap.utils.toArray<HTMLElement>('.highlights-title');
 
-        const tl = gsap.timeline({
-        });
         
         if (titles.length > 0)
         {
@@ -46,7 +44,7 @@ const PortfolioSection = () => {
             titles.forEach(title => {
                 const splitTitle = new SplitTextJS(title);
                 
-                tl.from(splitTitle.chars, {
+                gsap.from(splitTitle.chars, {
                         opacity:0,
                             x:-10,
                             strokeOpacity: 0,
@@ -60,7 +58,7 @@ const PortfolioSection = () => {
                                 toggleActions: "play none reverse none",
                                 scrub: 5,
                             },
-                        }, "<")
+                        })
             });
         }
 
@@ -83,11 +81,6 @@ const PortfolioSection = () => {
             })
         });
 
-        // Limpieza
-        return () => {
-            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-            tl.kill();
-        };
 
     }, []);
 
