@@ -2,6 +2,10 @@
 
 import React from "react"
 import ProjectCard from "../ProjectCard/ProjectCard";
+import { useGSAP } from "@gsap/react";
+import { gsap } from 'gsap';
+import SplitTextJS from 'split-text-js';
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 const projects = [
     {
@@ -28,14 +32,73 @@ const projects = [
   ];
 
 const PortfolioSection = () => {
+
+    useGSAP(() => {
+        
+        const titles = gsap.utils.toArray<HTMLElement>('.highlights-title');
+
+        const tl = gsap.timeline({
+        });
+        
+        if (titles.length > 0)
+        {
+            
+            titles.forEach(title => {
+                const splitTitle = new SplitTextJS(title);
+                
+                tl.from(splitTitle.chars, {
+                        opacity:0,
+                            x:-10,
+                            strokeOpacity: 0,
+                            stagger: 0.5,
+                            duration: 3,
+                            scrollTrigger: {
+                                trigger: '.portfolio-container',
+                                start: "top 100%",
+                                end: "top 75%",
+                                markers: true,
+                                toggleActions: "play none reverse none",
+                                scrub: 5,
+                            },
+                        }, "<")
+            });
+        }
+
+
+        const projectCards = gsap.utils.toArray<HTMLElement>('.project-card');
+
+        projectCards.forEach(projectCards => {
+            gsap.from(projectCards, {
+                opacity: 0,
+                stagger: 0.5,
+                duration: 3, 
+                scrollTrigger: {
+                    trigger: projectCards,
+                    start: "top 100%",
+                    end: "top 75%",
+                    markers: true,
+                    toggleActions: "play none reverse none",
+                    scrub: 10,
+                },
+            })
+        });
+
+        // Limpieza
+        return () => {
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+            tl.kill();
+        };
+
+    }, []);
+
     return (
-        <div className="container flex flex-col gap-12">
+        <div className="container flex flex-col gap-12 portfolio-container">
             <div className="flex justify-center">
-                <h2 className="text-6xl">
-                    Projects <span className="text-[var(--color-highlight)]">Highlights</span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+                    <span className="highlights-title">Projects</span> <span className="text-[var(--color-highlight)] highlights-title">Highlights</span>
                 </h2>
             </div>
-            <div className="flex flex-col gap-[1rem] mx-auto w-full xl:w-[85%]">
+            <div className="flex flex-col gap-[1rem] mx-auto w-full xl:w-[85%] project-card">
                 {projects.map(project => (
                     <ProjectCard
                         key={project.index}

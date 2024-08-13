@@ -37,8 +37,8 @@ const ContactCarousel = () => {
     return (
         <>
 
-            <div className='min-h-[650px] w-full flex flex-col gap-8 relative overflow-hidden items-center'>
-                <div className='text-7xl'>CONTACT ME</div>
+            <div className='min-h-[550px] w-full flex flex-col gap-8 relative overflow-hidden items-center'>
+                <div className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl'>Let&apos;s get in touch!</div>
                 <Swiper
                     effect={'cards'}
                     grabCursor={true}
@@ -56,7 +56,7 @@ const ContactCarousel = () => {
                         onClick={(e: React.MouseEvent<HTMLDivElement>) => handleSlideClick(e, 0)}
                     >
                         <a href="/" onClick={(e) => activeIndex !== 0 && e.preventDefault()}>
-                            <div className='p-8 flex flex-col items-center gap-8 w-full h-full'>
+                            <div className='flex flex-col items-center w-full h-full gap-8 p-8'>
                                 <div className='text-3xl font-bold'>Linkedin</div>
                                 <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
@@ -76,7 +76,7 @@ const ContactCarousel = () => {
                         onClick={(e: React.MouseEvent<HTMLDivElement>) => handleSlideClick(e, 1)}
                     >
                     <a href="/" onClick={(e) => activeIndex !== 1 && e.preventDefault()}>
-                            <div className='p-8 flex flex-col items-center gap-8 w-full h-full'>
+                            <div className='flex flex-col items-center w-full h-full gap-8 p-8'>
                                 <div className='text-3xl font-bold'>Email</div>
                                 <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
@@ -96,7 +96,7 @@ const ContactCarousel = () => {
                         onClick={(e: React.MouseEvent<HTMLDivElement>) => handleSlideClick(e, 2)}
                     >
                     <a href="/" onClick={(e) => activeIndex !== 2 && e.preventDefault()}>
-                            <div className='p-8 flex flex-col items-center gap-8 w-full h-full'>
+                            <div className='flex flex-col items-center w-full h-full gap-8 p-8'>
                                 <div className='text-3xl font-bold'>Github</div>
                                 <svg 
                                     xmlns="http://www.w3.org/2000/svg" 

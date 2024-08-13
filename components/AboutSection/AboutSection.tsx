@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import "./AboutSection.css"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutSection = () => {
@@ -34,12 +35,12 @@ const AboutSection = () => {
 
     return (
         <div className="container w-full">
-            <div className="grid grid-rows-5 grid-cols-6 text-nowrap">
-                <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-8xl xl:text-9xl uppercase mb-2 col-start-1 col-end-7">Coding with</div>
-                <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-8xl xl:text-9xl uppercase mb-2 col-start-2 col-end-6 text-right">Purpose</div>
-                <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-8xl xl:text-9xl uppercase mb-2 col-start-2 col-end-6 ">Creativity</div>
-                <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-8xl xl:text-9xl uppercase mb-2 col-start-2 col-end-7 text-right">Innovation</div>
-                <div className="autoBlur blur-2xl text-2xl sm:text-3xl md:text-4xl lg:text-8xl xl:text-9xl uppercase col-start-1 col-end-6 ">
+            <div className="grid grid-cols-6 grid-rows-5 text-nowrap">
+                <div className="col-start-1 col-end-7 mb-2 text-5xl uppercase autoBlur blur-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">Coding with</div>
+                <div className="col-start-2 col-end-6 mb-2 text-5xl text-right uppercase autoBlur blur-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">Purpose</div>
+                <div className="col-start-2 col-end-6 mb-2 text-5xl uppercase autoBlur blur-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl ">Creativity</div>
+                <div className="col-start-2 col-end-7 mb-2 text-5xl text-right uppercase autoBlur blur-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">Innovation</div>
+                <div className="col-start-1 col-end-6 text-5xl uppercase autoBlur blur-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl ">
                     <a href="/About" className="flex flex-row hover:text-[var(--color-highlight)] transition-colors" >
                         Learn more
                             <span>
