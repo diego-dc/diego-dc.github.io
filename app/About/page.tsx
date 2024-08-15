@@ -22,7 +22,7 @@ export default function About() {
                     <ThumbnailAbout></ThumbnailAbout>
                     <ScrollLine height={7}></ScrollLine>
                 </section>
-                <section id='AboutMe' className='relative min-h-[400px] min-w-full p-0'>
+                <section id='AboutMe' className='min-w-full px-0 py-16 relative'>
                     <AboutDraggable></AboutDraggable>
                 </section>
                 <section id='Technologies' className='flex min-h-screen max-h-screen min-w-full items-center relative p-0'>

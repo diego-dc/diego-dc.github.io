@@ -29,7 +29,6 @@
 }
 
 .dragItem {
-    position: absolute;
     top: var(--panel-top);
     bottom: var(--panel-bottom);
     right: var(--panel-right);
