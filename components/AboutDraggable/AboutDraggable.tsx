@@ -17,14 +17,25 @@ const AboutDraggable = () => {
             bounds: document.getElementById("containerDraggable"),
             inertia: true,
           });
-        
-    });
+
+        gsap.from('.containerDraggable', {
+            opacity: 0,
+            scrollTrigger: {
+                trigger: '.containerDraggable',
+                start: "top 100%",
+                markers: true,
+                end: "top 75%",
+                scrub: 2,
+            },
+        });
+
+    }, []);
 
     return (
         <div className="flex flex-col gap-12">
             <div>
                 <div className="container flex justify-center">
-                    <div id="containerDraggable" className="relative flex w-full flex-col justify-center gap-4 md:w-10/12 xl:aspect-[6/4] xl:w-11/12 xl:min-h-[850px]">      
+                    <div id="containerDraggable" className="containerDraggable relative flex w-full flex-col justify-center gap-4 md:w-10/12 xl:aspect-[6/4] xl:w-11/12 xl:min-h-[850px]">      
                         <div id="dragItem-1" className="dragItem w-full transition-all ease-out odd:ml-auto xl:absolute xl:w-[45%] odd:xl:ml-0">
                             <div className="flex h-full flex-col overflow-hidden rounded border border-base-300">
                                 <div className="flex h-10 min-h-10 items-center gap-4 border-b border-base-300 px-4 glossy-90">

@@ -15,7 +15,6 @@ const Thumbnail = () => {
           .from('.tagTitle', {translateX:1500, duration:2}, "-=2")
           .from('.subTitle', {opacity:0, translateY:-100})
           
-
     }, []);
 
     return (
