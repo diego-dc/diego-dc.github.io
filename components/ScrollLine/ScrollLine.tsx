@@ -19,8 +19,8 @@ function ScrollLine({ height }: ScrollLineProps) {
   
   return (
 
-    <div className="scroll-line absolute bottom-6 " style={{ height: `${height}rem`}}>
-        <div className="line opacity-0" style={{ height: `${height}rem`}}></div>
+    <div className="absolute scroll-line bottom-6 " style={{ height: `${height}rem`}}>
+        <div className="opacity-0 line" style={{ height: `${height}rem`}}></div>
     </div>
   );
 }

@@ -8,6 +8,7 @@ import { Swiper as SwiperType } from 'swiper/types';
 import { useGSAP } from "@gsap/react";
 import SplitTextJS from 'split-text-js';
 
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-cards';
@@ -73,6 +74,7 @@ const ContactCarousel = () => {
                 scrub: 10,
             },
         });
+
 
     
     }, []);

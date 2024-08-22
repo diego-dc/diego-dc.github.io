@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Link from 'next/link';
 
 const Navbar = () => {
     const [isClick, setisClick] = useState(false);
@@ -38,7 +37,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="hidden md:block">
-                        <div className="ml-4 flex items-center space-x-8">
+                        <div className="flex items-center ml-4 space-x-8">
                             <a href="/">
                                 <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
@@ -88,7 +87,7 @@ const Navbar = () => {
                             {isClick ? (
                                 
                                 <svg 
-                                className="h-6 w-6"
+                                className="w-6 h-6"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -103,7 +102,7 @@ const Navbar = () => {
                                 </svg>
                             ):
                                 <svg 
-                                className="h-6 w-6"
+                                className="w-6 h-6"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
