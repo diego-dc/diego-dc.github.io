@@ -28,14 +28,16 @@ const Navbar = () => {
 
 
     return (
-        <nav className={header ? "bg-[rgb(0,0,0,0.2)] z-50 fixed w-[100%] " : "bg-[transparent] z-50 fixed w-[100%]"}>
+        <nav className={`${isClick ? "bg-[var(--color-primary)] h-screen transition-all" : header ? "bg-[rgb(0,0,0,0.2)]" : "bg-[transparent]"} z-50 fixed w-full transition-all`}>
             <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
+                    
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
                             <a href="/">DC</a>
                         </div>
                     </div>
+
                     <div className="hidden md:block">
                         <div className="flex items-center ml-4 space-x-8">
                             <a href="/">
@@ -82,65 +84,62 @@ const Navbar = () => {
                             </a>
                         </div>
                     </div>
+
                     <div className="flex items-center">
-                        <button className="inline-flex items-center justify-center p-2 rounded-md" onClick={toggleNavbar}>
-                            {isClick ? (
-                                
-                                <svg 
-                                className="w-6 h-6"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                >
-                                    <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M6 18L18 6M6 6l12 12"
-                                    />
-                                </svg>
-                            ):
-                                <svg 
-                                className="w-6 h-6"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                >
-                                    <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M4 6h16M4 12h16m-7 6h7"
-                                    />
-                                </svg>
-                            }
+                        <button
+                        className="inline-flex items-center justify-center p-2 rounded-md"
+                        onClick={toggleNavbar}
+                        >
+                        {isClick ? (
+                            <svg
+                            className="w-6 h-6"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                            </svg>
+                        ) : (
+                            <svg
+                            className="w-6 h-6"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M4 6h16M4 12h16m-7 6h7"
+                            />
+                            </svg>
+                        )}
                         </button>
                     </div>
                 </div>
             </div>
+    
             {isClick && (
-                <div className="text-center h-screen w-screen">
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 h-full w-full flex flex-col gap-32 items-center justify-center bg-[var(--color-primary)]">
-                        <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl gap-12 flex flex-col">
-                            <a href="/"
-                            className="block p-2"
-                            >
-                                Home
-                            </a>
-                            <a href="/About"
-                            className="block p-2"
-                            >
-                                About
-                            </a>
-                            <a href="/KCLPARTPage"
-                            className="block p-2"
-                            >
-                                KCLP.ART
-                            </a>
-                        </div>
-                        <div className="hidden md:block">
+                <div className="text-center h-screen w-screen flex flex-col justify-center items-center gap-32">
+                    <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col gap-12">
+                        <a href="/" className="block p-2">
+                        Home
+                        </a>
+                        <a href="/About" className="block p-2">
+                        About
+                        </a>
+                        <a href="/KCLPARTPage" className="block p-2">
+                        KCLP.ART
+                        </a>
+                    </div>
+                    <div className="hidden md:block">
                             <div className="flex items-center ml-4 space-x-8">
                                 <a href="/">
                                     <svg 
@@ -184,13 +183,11 @@ const Navbar = () => {
                                     </svg>  
                                 </a>
                             </div>
-                        </div>
                     </div>
-
                 </div>
             )}
         </nav>
-    )
-}
+      );
+    }
 
 export default Navbar;
