@@ -33,6 +33,13 @@ const KCLPThumbnail = () => {
             duration: 4,
         }, '-=3');
 
+        masterTimeline.from('.promotionSection', {
+            opacity: 0,
+            x:150,
+            stagger:0.2,
+            duration: 3,
+        }, '-=2');
+
 
     }, []);
 
@@ -125,6 +132,20 @@ const KCLPThumbnail = () => {
             <div className="content title">
                 <h1 data-content="KCLP.ART">KCLP.ART</h1>
                 <div className="model kl"></div>
+            </div>
+            <div className="promotionSection">
+                <div className="flex flex-col">
+                    <a href="/" className=" flex flex-col gap-6 kclp-link transition-all justify-center items-center">
+                        <h1 >Follow me on Instagram!</h1>
+                        <Image 
+                            src="/img/logos/Logo_KCLP_White.svg" 
+                            alt="LogoKCLP"
+                            className="img-item"
+                            width={125}
+                            height={125}
+                        />
+                    </a>
+                </div>
             </div>
         </div>
     );
