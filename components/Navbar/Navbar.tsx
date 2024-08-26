@@ -1,10 +1,14 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import "./Navbar.css"
+import { useGSAP } from "@gsap/react";
+import { gsap } from 'gsap';
 
 const Navbar = () => {
     const [isClick, setisClick] = useState(false);
     const [header, setHeader] = useState(false);
+    const [initialVisible, setInitialVisible] = useState(false);
 
     const toggleNavbar = () => {
         setisClick(!isClick)
@@ -19,28 +23,67 @@ const Navbar = () => {
     }
 
     useEffect(() => {
-        window.addEventListener('scroll', scrollHeader)
 
-        return ()=>{
-            window.addEventListener('scroll', scrollHeader)
-        }
-    })
+        const navbar = document.getElementById('navbar');
+        const showNavbar = () => {
+            if (navbar) {
+                setInitialVisible(true);  // Mostrar el navbar después del tiempo
+            }
+        };
+    
+        const timer = setTimeout(showNavbar, 1000);
+    
+        // Añadir evento de scroll que siempre estará activo
+        window.addEventListener('scroll', scrollHeader);
+    
+        return () => {
+            // Limpiar el timeout cuando el componente se desmonte
+            clearTimeout(timer);
+    
+            // Remover evento de scroll para evitar fugas de memoria
+            window.removeEventListener('scroll', scrollHeader);
+        };
+    }, []);
 
 
     return (
-        <nav className={`${isClick ? "bg-[var(--color-primary)] h-screen transition-all" : header ? "bg-[rgb(0,0,0,0.2)]" : "bg-[transparent]"} z-50 fixed w-full transition-all`}>
+        <nav id="navbar" className={`
+            z-50 fixed w-full transition-all navbar 
+            ${isClick ? "bg-[var(--color-primary)] h-screen" : ""} 
+            ${header ? "bg-[rgb(0,0,0,0.2)] visible-navbar" : "bg-[transparent]"} 
+            ${initialVisible ? "visible-navbar" : "hidden-navbar"}
+          `}>
             <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
-                            <a href="/">DC</a>
-                        </div>
+                            {isClick ? 
+                            (
+                                <svg 
+                                    className="cursor-pointer text-slate-400 text-xl font-bold transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90"
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    viewBox="0 0 640 512"
+                                    width={24}
+                                    height={24}
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                >
+                                        
+                                        <path 
+                                            d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                                        />
+                                </svg>
+                            ):
+                            (
+                            <a href="/" className="cursor-pointer text-slate-400 text-xl font-bold transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90">DC</a>
+                            )}
+                            </div>
                     </div>
 
-                    <div className="hidden md:block">
-                        <div className="flex items-center ml-4 space-x-8">
-                            <a href="/">
+                    <div className={`${isClick ? "hidden transition-all" : "hidden md:block transition-all"}`}>
+                        <div className="flex items-center ml-4 space-x-12">
+                            <a href="/" className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90">
                                 <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
                                     viewBox="0 0 576 512"
@@ -54,7 +97,7 @@ const Navbar = () => {
                                         />
                                 </svg>
                             </a>
-                            <a href="/About">
+                            <a href="/About" className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90">
                                 <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
                                     viewBox="0 0 448 512"
@@ -68,7 +111,7 @@ const Navbar = () => {
                                         />
                                 </svg>
                             </a>
-                            <a href="/KCLPARTPage">
+                            <a href="/KCLPARTPage" className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90">
                                 <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
                                     viewBox="0 0 512 512"
@@ -92,33 +135,33 @@ const Navbar = () => {
                         >
                         {isClick ? (
                             <svg
-                            className="w-6 h-6"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
+                                className="w-6 h-6 cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
                             >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M6 18L18 6M6 6l12 12"
-                            />
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
                             </svg>
                         ) : (
                             <svg
-                            className="w-6 h-6"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
+                                className="w-6 h-6 cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
                             >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M4 6h16M4 12h16m-7 6h7"
-                            />
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M4 6h16M4 12h16m-7 6h7"
+                                />
                             </svg>
                         )}
                         </button>
@@ -127,26 +170,26 @@ const Navbar = () => {
             </div>
     
             {isClick && (
-                <div className="text-center h-screen w-screen flex flex-col justify-center items-center gap-32">
-                    <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col gap-12">
-                        <a href="/" className="block p-2">
-                        Home
+                <div className="flex flex-col items-center justify-center w-screen h-screen gap-32 text-center">
+                    <div className="flex flex-col gap-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+                        <a href="/" className="block p-2 navlink">
+                            Home
                         </a>
-                        <a href="/About" className="block p-2">
-                        About
+                        <a href="/About" className="block p-2 navlink">
+                            About
                         </a>
-                        <a href="/KCLPARTPage" className="block p-2">
-                        KCLP.ART
+                        <a href="/KCLPARTPage" className="block p-2 navlink">
+                            KCLP.ART
                         </a>
                     </div>
                     <div className="hidden md:block">
-                            <div className="flex items-center ml-4 space-x-8">
-                                <a href="/">
+                            <div className="flex items-center ml-4 space-x-12">
+                                <a href="/" className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90">
                                     <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
                                     viewBox="0 0 496 512"
-                                    width={24}
-                                    height={24}
+                                    width={30}
+                                    height={30}
                                     stroke="currentColor"
                                     fill="currentColor">
                                         <path 
@@ -154,12 +197,12 @@ const Navbar = () => {
                                         />
                                     </svg>
                                 </a>
-                                <a href="/">
+                                <a href="/" className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90">
                                     <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
                                     viewBox="0 0 512 512"
-                                    width={24}
-                                    height={24}
+                                    width={30}
+                                    height={30}
                                     stroke="currentColor"
                                     fill="currentColor"
                                     >
@@ -168,12 +211,12 @@ const Navbar = () => {
                                         />
                                     </svg>
                                 </a>
-                                <a href="/">
+                                <a href="/" className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90">
                                     <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
                                     viewBox="0 0 448 512"
-                                    width={24}
-                                    height={24}
+                                    width={30}
+                                    height={30}
                                     stroke="currentColor"
                                     fill="currentColor"
                                     >

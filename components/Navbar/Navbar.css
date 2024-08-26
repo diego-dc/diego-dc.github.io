@@ -1,0 +1,38 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    transition: top 3s ease !important; /* Controla la animación de bajada */
+}
+
+.visible-navbar {
+    top: 0; /* Vuelve el navbar a la posición visible */
+}
+
+.hidden-navbar {
+    top: -100px; /* Mantiene el navbar oculto inicialmente */
+}
+
+
+/* button styling */
+.navlink {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    background: linear-gradient(90deg, white 0%, var(--color-highlight) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease;
+    display: inline-block;
+}
+
+/* hover */
+.navlink:hover {
+    background-position: -100% 0;
+}
+
+.navlink:active {
+    transform: scale(0.95);
+    filter: drop-shadow(0 0 23px var(--color-highlight));
+}
