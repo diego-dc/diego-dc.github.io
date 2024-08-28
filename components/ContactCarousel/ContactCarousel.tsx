@@ -69,7 +69,6 @@ const ContactCarousel = () => {
                 trigger: '.contact-container',
                 start: "top 100%",
                 end: "top 75%",
-                markers:true,
                 toggleActions: "play none reverse none",
                 scrub: 10,
             },
@@ -84,7 +83,7 @@ const ContactCarousel = () => {
         <>
 
             <div className='absolute relative bottom-0 flex flex-col items-center w-full gap-8 overflow-hidden contact-container'>
-                <div className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl contactTitle'>Let&apos;s get in touch!</div>
+                <div className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl contactTitle'>Let&apos;s get in touch!</div>
                 <div className='h-[314px] sm:h-[364px] md:h-[414px] lg:h-[514px] xl:[614px] w-full flex flex-col gap-8 relative overflow-hidden items-center swiper-container'>
                     <Swiper
                         effect={'cards'}

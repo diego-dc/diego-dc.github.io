@@ -41,7 +41,7 @@ const AboutDraggable = () => {
     return (
         <div className="flex flex-col gap-12">
             <div>
-                <div className="container flex justify-center">
+                <div className="container flex justify-center px-4">
                     <div id="containerDraggable" className="relative flex w-full flex-col justify-center gap-4 md:w-10/12 xl:aspect-[6/4] xl:w-11/12 xl:min-h-[850px]">      
                         <div id="dragItem-1" className="dragItem w-full transition-all ease-out odd:ml-auto xl:absolute xl:w-[45%] odd:xl:ml-0">
                             <div className="flex flex-col h-full overflow-hidden border rounded border-base-300">
@@ -135,7 +135,25 @@ const AboutDraggable = () => {
                                 </div>
                                 <div className="p-4 font-medium markdown info-panel-lines glossy-75 text-neutral">
                                     <p>I also create <span className="text-[var(--color-highlight)]">art</span> occasionally. Sometimes I feel the need to <span className="text-[var(--color-highlight)]">create something</span>, and this is my way of doing it. Check it out if you&apos;re interested!</p>
-                                    <p>Visit KCLP.ART</p>
+                                    <p className="flex flex-row cursor-pointer underline-offset-1">
+                                        <a href="/KCLPARTPage" className="flex flex-row underline">
+                                            Visit KCLP.ART 
+                                            <span>
+                                                <svg 
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    height={26} 
+                                                    viewBox="0 0 24 24" 
+                                                    fill="none" 
+                                                    stroke="currentColor" 
+                                                    strokeWidth="1.5" 
+                                                    strokeLinecap="butt" 
+                                                    strokeLinejoin="round"
+                                                >
+                                                    <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
                         </div>

@@ -48,12 +48,12 @@ const Navbar = () => {
 
     return (
         <nav id="navbar" className={`
-            z-50 fixed w-full transition-all navbar 
+            z-50 fixed w-screen transition-all navbar 
             ${isClick ? "bg-[var(--color-primary)] h-screen" : ""} 
             ${header ? "bg-[rgb(0,0,0,0.2)] visible-navbar" : "bg-[transparent]"} 
             ${initialVisible ? "visible-navbar" : "hidden-navbar"}
           `}>
-            <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-8">
+            <div className="max-w-screen-xl mx-auto lg:px-8 px-6">
                 <div className="flex items-center justify-between h-16">
                     
                     <div className="flex items-center">
@@ -130,8 +130,8 @@ const Navbar = () => {
 
                     <div className="flex items-center">
                         <button
-                        className="inline-flex items-center justify-center p-2 rounded-md"
-                        onClick={toggleNavbar}
+                            className="inline-flex items-center justify-center p-2 rounded-md"
+                            onClick={toggleNavbar}
                         >
                         {isClick ? (
                             <svg
@@ -182,7 +182,7 @@ const Navbar = () => {
                             KCLP.ART
                         </a>
                     </div>
-                    <div className="hidden md:block">
+                    <div className="">
                             <div className="flex items-center ml-4 space-x-12">
                                 <a href="/" className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90">
                                     <svg 

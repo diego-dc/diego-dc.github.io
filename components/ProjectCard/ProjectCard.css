@@ -21,10 +21,16 @@
 .project-item-m {
     display: grid;
     grid-template-areas:
-    "index title year"
-    "empty tags other";
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: auto auto;
+    "image image"
+    "index year"
+    "title title"
+    "tags tags";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.project-item-image {
+    grid-area: image;
 }
 
 .project-item-index{

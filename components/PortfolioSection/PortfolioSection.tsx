@@ -131,7 +131,7 @@ const PortfolioSection = () => {
     return (
         <div className="container flex flex-col gap-12 portfolio-container">
             <div className="flex justify-center">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
                     <span className="highlights-title">Projects</span> <span className="text-[var(--color-highlight)] highlights-title">Highlights</span>
                 </h2>
             </div>

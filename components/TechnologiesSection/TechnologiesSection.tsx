@@ -52,17 +52,17 @@ const TechnologiesSection = () => {
     }, []);
 
     return (
-        <div className="container flex flex-col gap-12">
+        <div className="container flex flex-col gap-8 md:gap-12">
             <div className="flex flex-col items-center justify-center techsTitleContainer">
-                <h2 className="text-6xl section-title">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl section-title">
                     Some of the techs i like to 
                 </h2>
-                <h2 className="text-6xl text-[var(--color-highlight)] section-title">work with</h2>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl text-[var(--color-highlight)] section-title">work with</h2>
             </div>
-            <div className="relative flex flex-col items-center justify-center gap-0 techsContainer">
+            <div className="relative flex flex-col items-center justify-center gap-0 px-4 md:px-0 techsContainer">
                 <div className="top-0 scroll-line-static-top" style={{ height: `9rem`}}></div>
                 <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12">
-                    <div className="grid grid-cols-5 gap-12">
+                    <div className="grid grid-cols-2 gap-12 md:grid-cols-5">
                         <div className="flex items-center justify-center w-full h-14">
                             <Image 
                                 alt="CSS"

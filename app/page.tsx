@@ -22,7 +22,7 @@ export default function Page() {
         <meta name="description" content="Welcome to my personal website." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className="z-10 flex flex-col min-h-screen">
+      <main className="z-10 flex flex-col min-h-screen px-2 sm:px-0">
         <Background></Background>
         <section id='Thumbnail' className='relative flex items-center justify-center max-h-screen min-w-full min-h-screen px-0'>
           <Thumbnail></Thumbnail>
@@ -32,7 +32,7 @@ export default function Page() {
           <AboutSection></AboutSection>
           <ScrollLine height={6}></ScrollLine>
         </section>
-        <section id='PortfolioSection' className='relative px-0'>
+        <section id='PortfolioSection' className='relative px-2'>
           <PortfolioSection></PortfolioSection>
         </section>
         <section id='ContactSection' className='p-0'>

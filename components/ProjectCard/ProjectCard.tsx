@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, projectName, tags, dat
 
             <div className="project-card group/project project-item-m md:project-item-t xl:project-item relative mt-10 justify-between gap-4 rounded border border-[var(--color-light)] p-8 text-sm font-medium transition-all md:gap-y-3 xl:mt-0 xl:px-8 xl:py-20 xl:hover:gap-x-0 bg-[rgb(15,15,15,0.25)]">
                 <div className="pt-1 transition-all project-item-index md:w-5 md: xl:group-hover/project:w-0 xl:group-hover/project:opacity-0">{index}</div>
-                <h3 className="text-6xl project-item-title">{projectName}</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-6xl project-item-title">{projectName}</h3>
                 <div className="flex gap-0 transition-all project-item-year justify-self-end xl:group-hover/project:gap-2">
                     {date}
                     <svg 
@@ -53,7 +53,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, projectName, tags, dat
                         alt="Diego Caviedes Portfolio Section"
                         loading="lazy"
                         src={imageSrc}
-                        className="image-card sm:-rotate-3 xl:rotate-0 xl:group-hover/deck:rotate-[-5deg]"
+                        className="image-card max-w-[1250px] md:max-w-[75vw] lg:max-w-[50vw] xl:max-w-[480px] sm: sm:-rotate-3 xl:rotate-0 xl:group-hover/deck:rotate-[-5deg]"
                     />
                 </div>
 

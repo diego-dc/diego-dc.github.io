@@ -9,10 +9,10 @@
 .tag-div::before {
     content: "";
     position: absolute;
-    top: -50%; /* Ajusta este valor para mover el inicio del gradiente */
-    left: -50%; /* Ajusta este valor para mover el inicio del gradiente */
-    width: 150%; /* Aumenta el tamaño para cubrir el área extra */
-    height: 150%; /* Aumenta el tamaño para cubrir el área extra */
+    top: -50%; /* Ajustar este valor para mover el inicio del gradiente */
+    left: -50%; /* Ajustar este valor para mover el inicio del gradiente */
+    width: 150%; /* Aumentar el tamaño para cubrir el área extra */
+    height: 150%; /* Aumentar el tamaño para cubrir el área extra */
     background-image: var(--gradient-tags);
-    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+    z-index: -1; /* Asegurar que el pseudo-elemento esté detrás del contenido */
 }
