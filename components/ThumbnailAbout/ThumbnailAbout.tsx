@@ -80,21 +80,21 @@ const ThumbnailAbout = () => {
 
     return (
         <div className="container flex flex-col items-center justify-center w-full title-container">
-                <div className="mb-2 text-3xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl">
+                <div className="mb-2 text-3xl sm:text-3xl md:text-6xl lg:text-6xl xl:text-8xl">
                     <span className="thumbnail-title">Hey! my name is </span><span className="text-[var(--color-highlight)] text-name inline-block">Diego</span>.
                 </div>
-                <div className="mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl thumbnail-title2">
+                <div className="mb-2 text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl thumbnail-title2">
                     I&apos;m dedicated to coding with 
                 </div>
-                <div className="container sm:mt-2 md:mt-10">
+                <div className="container sm:mt-2 md:mt-6 lg:mt-10">
                     <div className="text-wrapper">
-                        <div className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl mb-2 text-[var(--color-highlight)] uppercase text-variant">
+                        <div className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl mb-2 text-[var(--color-highlight)] uppercase text-variant">
                             Creativity
                         </div>
-                        <div className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl mb-2 text-[var(--color-highlight)] uppercase text-variant">
+                        <div className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl mb-2 text-[var(--color-highlight)] uppercase text-variant">
                             Innovation
                         </div>
-                        <div className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl mb-2 text-[var(--color-highlight)] uppercase text-variant">
+                        <div className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl mb-2 text-[var(--color-highlight)] uppercase text-variant">
                             A purpose
                         </div>
                     </div>

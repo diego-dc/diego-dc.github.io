@@ -74,7 +74,7 @@ const AboutDraggable = () => {
                                 </div>
                                 <div className="p-4 font-medium markdown info-panel-lines glossy-75 text-neutral">
                                     <p>Currently based in <span className="text-[var(--color-highlight)]">Santiago, Chile</span> CL.</p>
-                                    <p>My preference is always to work on something with international reach, but any interesting project can capture my attention!</p>
+                                    <p>I’m eager to work on projects with international reach, but I’m open to any exciting opportunity that captures my interest!</p>
                                 </div>
                             </div>
                         </div>

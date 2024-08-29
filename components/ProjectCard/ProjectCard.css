@@ -29,9 +29,7 @@
     grid-template-rows: auto auto auto auto;
 }
 
-.project-item-image {
-    grid-area: image;
-}
+
 
 .project-item-index{
     grid-area: index; 
@@ -68,4 +66,10 @@
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
     transition-timing-function: cubic-bezier(.615,.19,.305,.91);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1279px) {
+    .project-item-image {
+        grid-area: image;
+    }
 }

@@ -3,8 +3,6 @@
 import React from "react"
 import Image from 'next/image'
 import "./ProjectCard.css"
-import { useGSAP } from "@gsap/react";
-import { gsap } from 'gsap';
 
 
 interface ProjectCardProps {
@@ -53,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, projectName, tags, dat
                         alt="Diego Caviedes Portfolio Section"
                         loading="lazy"
                         src={imageSrc}
-                        className="image-card max-w-[1250px] md:max-w-[75vw] lg:max-w-[50vw] xl:max-w-[480px] sm: sm:-rotate-3 xl:rotate-0 xl:group-hover/deck:rotate-[-5deg]"
+                        className="image-card max-w-[1250px] md:max-w-[75vw] lg:max-w-[50vw] xl:max-w-[600px] sm:-rotate-3 xl:rotate-0 xl:group-hover/deck:rotate-[-5deg]"
                     />
                 </div>
 

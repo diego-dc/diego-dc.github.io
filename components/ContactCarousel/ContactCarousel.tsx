@@ -101,7 +101,7 @@ const ContactCarousel = () => {
                             className={activeIndex === 0 ? 'active-slide' : ''}
                             onClick={(e: React.MouseEvent<HTMLDivElement>) => handleSlideClick(e, 0)}
                         >
-                            <a href="/" onClick={(e) => activeIndex !== 0 && e.preventDefault()}>
+                            <a href="https://linkedin.com/in/diego-caviedes-aguirre-022b6b225" target="_blank" onClick={(e) => activeIndex !== 0 && e.preventDefault()}>
                                 <div className='flex flex-col items-center w-full h-full gap-8 p-8 md:gap-6'>
                                     <div className='text-3xl font-bold'>Linkedin</div>
                                     <svg 
@@ -121,7 +121,7 @@ const ContactCarousel = () => {
                             className={activeIndex === 1 ? 'active-slide' : ''}
                             onClick={(e: React.MouseEvent<HTMLDivElement>) => handleSlideClick(e, 1)}
                         >
-                        <a href="/" onClick={(e) => activeIndex !== 1 && e.preventDefault()}>
+                        <a href="mailto:diegcavi21@gmail.com" onClick={(e) => activeIndex !== 1 && e.preventDefault()}>
                                 <div className='flex flex-col items-center w-full h-full gap-8 p-8 md:gap-6'>
                                     <div className='text-3xl font-bold'>Email</div>
                                     <svg 
@@ -141,7 +141,7 @@ const ContactCarousel = () => {
                             className={activeIndex === 2 ? 'active-slide' : ''}
                             onClick={(e: React.MouseEvent<HTMLDivElement>) => handleSlideClick(e, 2)}
                         >
-                        <a href="/" onClick={(e) => activeIndex !== 2 && e.preventDefault()}>
+                        <a href="https://github.com/diego-dc" target="_blank" onClick={(e) => activeIndex !== 2 && e.preventDefault()}>
                                 <div className='flex flex-col items-center w-full h-full gap-8 p-8 md:gap-6'>
                                     <div className='text-3xl font-bold'>Github</div>
                                     <svg 

@@ -6,7 +6,6 @@ import "../../gsap/effects";
 import { useGSAP } from "@gsap/react";
 import "./KCLPThumbnail.css"
 import Image from 'next/image'
-import SplitTextJS from 'split-text-js';
 
 interface CustomCSSProperties extends React.CSSProperties {
     "--quantity"?: number;
@@ -135,8 +134,9 @@ const KCLPThumbnail = () => {
             </div>
             <div className="promotionSection">
                 <div className="flex flex-col">
-                    <a href="/" className=" flex flex-col gap-6 kclp-link transition-all justify-center items-center">
-                        <h1 >Follow me on Instagram!</h1>
+                    <a href="https://www.instagram.com/kclp.art/" target="_blank" className=" flex flex-col gap-3 lg:gap-6 kclp-link transition-all justify-center items-center">
+                        <h1 className="md:hidden lg:block">Follow me on Instagram!</h1>
+                        <h1 className="hidden md:block lg:hidden">Follow me!</h1>
                         <Image 
                             src="/img/logos/Logo_KCLP_White.svg" 
                             alt="LogoKCLP"
