@@ -1,0 +1,13 @@
+/* ScrollLine.css */
+
+.scroll-line-static-top{
+    width: 1px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 95%);
+    box-sizing: border-box;
+}
+
+.scroll-line-static-bottom{
+    width: 1px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 95%);
+    box-sizing: border-box;
+}

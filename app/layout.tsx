@@ -1,8 +1,9 @@
 import { Outfit } from 'next/font/google';
 import type { Metadata } from "next";
-import "./styles/global.css";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import "../styles/global.css";
+import Navbar from "../components/Navbar/Navbar";
 
 
 gsap.registerPlugin(useGSAP);
@@ -21,8 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={outfit.className}>{children}</body>
+    <html lang="en"> 
+      <body className={outfit.className}>
+        <Navbar></Navbar>
+        {children}
+      </body>
     </html>
   );
 }

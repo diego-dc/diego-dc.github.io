@@ -1,0 +1,18 @@
+/* Thumnail.css */
+
+.tag-div {
+    position: relative;
+    overflow: hidden; /* Para ocultar cualquier parte del pseudo-elemento que sobresalga */
+}
+
+/* Ajustar el inicio del div para que el gradiente comienze antes y se vea mejor. */
+.tag-div::before {
+    content: "";
+    position: absolute;
+    top: -50%; /* Ajustar este valor para mover el inicio del gradiente */
+    left: -50%; /* Ajustar este valor para mover el inicio del gradiente */
+    width: 150%; /* Aumentar el tamaño para cubrir el área extra */
+    height: 150%; /* Aumentar el tamaño para cubrir el área extra */
+    background-image: var(--gradient-tags);
+    z-index: -1; /* Asegurar que el pseudo-elemento esté detrás del contenido */
+}

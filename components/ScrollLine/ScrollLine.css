@@ -1,0 +1,32 @@
+/* ScrollLine.css */
+
+ @keyframes stroke {
+    from {
+        background-position: 0% 200%;
+      }
+      to {
+        background-position: 0% 0%;
+      }
+  }
+
+
+.scroll-line{
+    width: 1px;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.line:after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(255,255,255,0) 75%); 
+    background-size: 100% 200%;
+    background-position: 0% 200%;
+    animation-name: stroke;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

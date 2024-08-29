@@ -1,0 +1,71 @@
+
+.info-panel-lines {
+    counter-reset: line;
+}
+
+.markdown.info-panel-lines p:before {
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-left: -1.25rem;
+    padding-right: .5rem;
+    text-align: right;
+    width: 1.25rem;
+    color: var(--color-highlight);
+}
+
+.info-panel-lines li:before, .info-panel-lines p:before {
+    content: counter(line);
+    counter-increment: line;
+}
+
+.markdown.info-panel-lines p {
+    margin-bottom: .25rem;
+    padding-left: 1.25rem;
+}
+
+.glossy-75, .glossy-90 {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.dragItem {
+    top: var(--panel-top);
+    bottom: var(--panel-bottom);
+    right: var(--panel-right);
+    left: var(--panel-left);
+}
+
+#dragItem-1 {
+    --panel-top: 0%;
+    --panel-bottom: unset;
+    --panel-right: unset;
+    --panel-left: 24%;
+}
+
+#dragItem-2 {
+    --panel-top: 34%;
+    --panel-bottom: unset;
+    --panel-right: 38%;
+    --panel-left: unset;
+}
+
+#dragItem-3 {
+    --panel-top: 18%;
+    --panel-bottom: unset;
+    --panel-right: unset;
+    --panel-left: 10%;
+}
+
+#dragItem-4 {
+    --panel-top: unset;
+    --panel-bottom: 50%;
+    --panel-right: 8%;
+    --panel-left: 27;
+}
+
+#dragItem-5 {
+    --panel-top: unset;
+    --panel-bottom: 25%;
+    --panel-right: 50%;
+    --panel-left: unset;
+}
