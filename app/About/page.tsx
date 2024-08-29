@@ -32,7 +32,7 @@ export default function About() {
                 <section id='AboutMe' className='relative min-w-full px-0 py-16'>
                     <AboutDraggable></AboutDraggable>
                 </section>
-                <section id='Technologies' className='relative flex items-center max-h-screen min-w-full p-0 mb-[9rem] md:mb-1rem'>
+                <section id='Technologies' className='relative flex items-center max-h-screen min-w-full p-0 mb-[10rem] md:mb-1rem'>
                     <TechnologiesSection></TechnologiesSection>
                 </section>
                 <section id='ContactSection' className='p-0'>
