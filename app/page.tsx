@@ -1,20 +1,17 @@
-'use client'
+"use client";
 
-import Head from 'next/head';
+import Head from "next/head";
 import React from "react";
 import "../gsap/effects";
 
-
-import Background from '../components/Background/Background';
-import Thumbnail from '../components/Thumbnail/Thumbnail';
-import ScrollLine from '../components/ScrollLine/ScrollLine';
-import AboutSection from '../components/AboutSection/AboutSection';
-import PortfolioSection from '../components/PortfolioSection/PortfolioSection';
-import ContactCarousel from '@/components/ContactCarousel/ContactCarousel';
-
+import Background from "../components/Background/Background";
+import Thumbnail from "../components/Thumbnail/Thumbnail";
+import ScrollLine from "../components/ScrollLine/ScrollLine";
+import AboutSection from "../components/AboutSection/AboutSection";
+import PortfolioSection from "../components/PortfolioSection/PortfolioSection";
+import ContactCarousel from "@/components/ContactCarousel/ContactCarousel";
 
 export default function Page() {
-
   return (
     <>
       <Head>
@@ -24,18 +21,24 @@ export default function Page() {
       </Head>
       <main className="z-10 flex flex-col min-h-screen px-2 sm:px-0">
         <Background></Background>
-        <section id='Thumbnail' className='relative flex items-center justify-center max-h-screen min-w-full min-h-screen px-0'>
+        <section
+          id="Thumbnail"
+          className="relative flex items-center justify-center max-h-screen min-w-full min-h-screen px-0"
+        >
           <Thumbnail></Thumbnail>
           <ScrollLine height={6}></ScrollLine>
         </section>
-        <section id='AboutSection' className='flex relative min-h-[400px] h-fit px-4 md:px-16 xl:px-72 pb-52 items-center'>
+        <section
+          id="AboutSection"
+          className="flex relative min-h-[400px] h-fit px-4 md:px-16 xl:px-72 pb-52 items-center"
+        >
           <AboutSection></AboutSection>
           <ScrollLine height={6}></ScrollLine>
         </section>
-        <section id='PortfolioSection' className='relative px-2'>
+        <section id="PortfolioSection" className="relative px-2">
           <PortfolioSection></PortfolioSection>
         </section>
-        <section id='ContactSection' className='p-0'>
+        <section id="ContactSection" className="p-0">
           <ContactCarousel></ContactCarousel>
         </section>
       </main>
