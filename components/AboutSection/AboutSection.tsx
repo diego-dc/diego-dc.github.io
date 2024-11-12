@@ -6,6 +6,7 @@ import "../../gsap/effects";
 import { useGSAP } from "@gsap/react";
 import "./AboutSection.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +47,7 @@ const AboutSection = () => {
           Innovation
         </div>
         <div className="col-start-1 col-end-6 text-5xl uppercase autoBlur blur-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl ">
-          <a
+          <Link
             href="/About"
             className="flex flex-row hover:text-[var(--color-highlight)] transition-colors"
           >
@@ -65,7 +66,7 @@ const AboutSection = () => {
                 <path d="M7 17l9.2-9.2M17 17V7H7" />
               </svg>
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
