@@ -8,7 +8,7 @@ import Background from "../components/Background/Background";
 import Thumbnail from "../components/Thumbnail/Thumbnail";
 import ScrollLine from "../components/ScrollLine/ScrollLine";
 import AboutSection from "../components/AboutSection/AboutSection";
-import PortfolioSection from "../components/PortfolioSection/PortfolioSection";
+import PortfolioPreview from "@/components/PortfolioPreview/PortfolioPreview";
 import ContactCarousel from "@/components/ContactCarousel/ContactCarousel";
 
 export default function Page() {
@@ -36,7 +36,7 @@ export default function Page() {
           <ScrollLine height={6}></ScrollLine>
         </section>
         <section id="PortfolioSection" className="relative px-2">
-          <PortfolioSection limit={3}></PortfolioSection>
+          <PortfolioPreview></PortfolioPreview>
         </section>
         <section id="ContactSection" className="p-0">
           <ContactCarousel></ContactCarousel>

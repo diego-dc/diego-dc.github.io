@@ -3,6 +3,7 @@ import React from "react";
 import "./ProjectDisplay.css";
 
 import Image from "next/image";
+import ScrollLineStatics from "../ScrollLineStatics/ScrollLineStatics";
 
 interface PortfolioData {
   description: string;
@@ -42,11 +43,7 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
 
       {/* Imagen con scroll-lines */}
 
-      <div className="relative flex flex-col items-center justify-center w-4/5 gap-0 px-4 lg:px-8 xl:px-0 imageContainer">
-        <div
-          className="top-0 scroll-line-static-top"
-          style={{ height: `9rem` }}
-        ></div>
+      <ScrollLineStatics>
         <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 relative aspect-video w-full rounded">
           <Image
             alt="ProjectImage"
@@ -57,11 +54,7 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
             className="rounded"
           ></Image>
         </div>
-        <div
-          className="top-0 scroll-line-static-bottom"
-          style={{ height: `9rem` }}
-        ></div>
-      </div>
+      </ScrollLineStatics>
 
       {/* Container con info del proyecto */}
 

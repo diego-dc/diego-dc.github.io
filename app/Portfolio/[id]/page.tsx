@@ -2,8 +2,11 @@
 
 import React from "react";
 import Head from "next/head";
-import ProyectDisplay from "@/components/ProyectDisplay/ProyectDisplay";
+
 import projects from "@/data/portfolio.json";
+
+import Background from "@/components/Background/Background";
+import ProyectDisplay from "@/components/ProyectDisplay/ProyectDisplay";
 
 interface PortfolioProps {
   params: { id: string };
@@ -41,6 +44,7 @@ export default function Page({ params }: PortfolioProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
+        <Background></Background>
         <ProyectDisplay project={project} />
       </main>
     </>
