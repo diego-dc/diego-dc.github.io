@@ -1,0 +1,38 @@
+[
+    {
+      "index": 1,
+      "projectName": "This Website!",
+      "tags": ["React", "Next.js", "TypeScript", "Tailwind", "Gasp"],
+      "date": "2024",
+      "imageSrc": "/img/projects/diegc-website.png",
+      "description": "This website is a personal project to showcase my work.",
+      "otherImages" : ["/img/projects/MyWebsite_cap1.png"]
+    },
+    {
+      "index": 2,
+      "projectName": "Nirsecl",
+      "tags": ["Django", "JavaScript", "Bootstrap"],
+      "date": "2024",
+      "imageSrc": "/img/projects/nirsecl.png",
+      "description": "This website is a personal project to showcase my work.",
+      "otherImages" : ["/img/projects/Nirse_cap1.png","/img/projects/Nirse_cap2.png"]
+    },
+    {
+      "index": 3,
+      "projectName": "RedesBeauchef",
+      "tags": ["Django", "JavaScript", "Bootstrap"],
+      "date": "2023",
+      "imageSrc": "/img/projects/RedesBeauchef.png",
+      "description": "This website is a personal project to showcase my work.",
+      "otherImages" : ["/img/projects/redes_cap1.png", "/img/projects/redes_cap2.png", "/img/projects/redes_cap3.png"]
+    },
+    {
+      "index": 4,
+      "projectName": "Game Mechanics Development",
+      "tags": ["Unreal Engine 5", "C#", "Blueprints"],
+      "date": "2023",
+      "imageSrc": "/img/projects/overviewUnreal.png",
+      "description": "This website is a personal project to showcase my work.",
+      "otherImages" : ["/img/projects/overviewUnreal2.png","/img/projects/overviewUnreal3.png"]
+    }
+]

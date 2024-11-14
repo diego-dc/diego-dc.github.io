@@ -6,32 +6,14 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import SplitTextJS from "split-text-js";
+import projects from "../../data/portfolio.json";
+import Link from "next/link";
 
-const projects = [
-  {
-    index: 1,
-    projectName: "This Website!",
-    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Gasp"],
-    date: "2024",
-    imageSrc: "/img/projects/diegc-website.png",
-  },
-  {
-    index: 2,
-    projectName: "Nirsecl",
-    tags: ["Django", "JavaScript", "Bootstrap"],
-    date: "2024",
-    imageSrc: "/img/projects/nirsecl.png",
-  },
-  {
-    index: 3,
-    projectName: "RedesBeauchef",
-    tags: ["Django", "JavaScript", "Bootstrap"],
-    date: "2023",
-    imageSrc: "/img/projects/RedesBeauchef.png",
-  },
-];
+interface PortfolioSectionProps {
+  limit?: number;
+}
 
-const PortfolioSection = () => {
+const PortfolioSection: React.FC<PortfolioSectionProps> = ({ limit = 3 }) => {
   useGSAP(() => {
     const titles = gsap.utils.toArray<HTMLElement>(".highlights-title");
 
@@ -136,15 +118,17 @@ const PortfolioSection = () => {
         </h2>
       </div>
       <div className="flex flex-col gap-[1rem] mx-auto w-full xl:w-[85%]">
-        {projects.map((project) => (
-          <ProjectCard
-            key={project.index}
-            index={project.index}
-            projectName={project.projectName}
-            tags={project.tags}
-            date={project.date}
-            imageSrc={project.imageSrc}
-          ></ProjectCard>
+        {projects.slice(0, limit ?? projects.length).map((project) => (
+          <Link href={`/Portfolio/${project.index}`}>
+            <ProjectCard
+              key={project.index}
+              index={project.index}
+              projectName={project.projectName}
+              tags={project.tags}
+              date={project.date}
+              imageSrc={project.imageSrc}
+            ></ProjectCard>
+          </Link>
         ))}
       </div>
     </div>

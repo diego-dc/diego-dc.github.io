@@ -36,7 +36,7 @@ export default function Page() {
           <ScrollLine height={6}></ScrollLine>
         </section>
         <section id="PortfolioSection" className="relative px-2">
-          <PortfolioSection></PortfolioSection>
+          <PortfolioSection limit={3}></PortfolioSection>
         </section>
         <section id="ContactSection" className="p-0">
           <ContactCarousel></ContactCarousel>
