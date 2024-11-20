@@ -54,9 +54,61 @@ section{
     border-radius: 50px;
     filter: blur(10px);
 }
-  
+
+
 @keyframes spinning82341 {
     to {
       transform: rotate(360deg);
     }
+}
+
+/* Button With Icon */
+
+.button-with-icon {
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-accent);
+    letter-spacing: 1px;
+    padding: 1rem 2rem;
+    text-align: center;
+    min-width: 120px;
+    min-height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-radius: 5px;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    transform: translateY(0px);
+    position: relative;
+    background: transparent;
+    color: var(--color-accent);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    transition: 150ms all ease-in-out;
+}
+
+.button-with-icon .icon {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-with-icon:active {
+    transform: translateY(3px);
+}
+
+.button-with-icon:hover span {
+    transform: translateX(calc(200%));
+}
+.button-with-icon:hover .icon {
+    transform: translateX(calc(200% + 12px));
+}
+
+.button-with-icon span {
+    transition: all 0.5s ease-in-out;
+    white-space: nowrap;
 }
