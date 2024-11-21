@@ -191,12 +191,14 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
               </div>
             </div>
             <div className="flex flex-col p-12 space-y-8">
-              <div className="flex flex-col text-start">
-                <p className="font-medium text-md text-slate-500">
-                  Comissioned by / On behalf of
-                </p>
-                <p className="text-lg font-medium">{project.company}</p>
-              </div>
+              {project.company && (
+                <div className="flex flex-col text-start">
+                  <p className="font-medium text-md text-slate-500">
+                    Comissioned by / On behalf of
+                  </p>
+                  <p className="text-lg font-medium">{project.company}</p>
+                </div>
+              )}
               <div className="flex flex-col text-start">
                 <p className="mb-2 text-sm font-medium md:text-md text-slate-500">
                   Tags
