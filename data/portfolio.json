@@ -38,6 +38,7 @@
       "date": "2023",
       "imageSrc": "/img/projects/overviewUnreal.png",
       "description": "This project involved developing the gameplay mechanics for a video game in its early stages of development. The game, called 'Zombattan', is set in a post-apocalyptic world and is centered around survival mode. My primary responsibilities included researching and designing the core gameplay mechanics that would support the overall gameplay experience, developing these mechanics, and creating a test map for conducting a small study. This study served as a proof of concept to validate the mechanics and provided clear guidance for the next phase of development.",
-      "otherImages" : ["/img/projects/overviewUnreal2.png","/img/projects/overviewUnreal3.png"]
+      "otherImages" : ["/img/projects/overviewUnreal2.png","/img/projects/overviewUnreal3.png"],
+      "company":"TimeVortex EIRL"
     }
 ]
