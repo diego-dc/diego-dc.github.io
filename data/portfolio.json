@@ -15,7 +15,8 @@
       "date": "2024",
       "imageSrc": "/img/projects/nirsecl.png",
       "description": "This website is a personal project to showcase my work.",
-      "otherImages" : ["/img/projects/Nirse_cap1.png","/img/projects/Nirse_cap2.png"]
+      "otherImages" : ["/img/projects/Nirse_cap1.png","/img/projects/Nirse_cap2.png"],
+      "link": "https://nirse.isci.cl/"
     },
     {
       "index": 3,
@@ -24,7 +25,8 @@
       "date": "2023",
       "imageSrc": "/img/projects/RedesBeauchef.png",
       "description": "This website is a personal project to showcase my work.",
-      "otherImages" : ["/img/projects/redes_cap1.png", "/img/projects/redes_cap2.png", "/img/projects/redes_cap3.png"]
+      "otherImages" : ["/img/projects/redes_cap1.png", "/img/projects/redes_cap2.png", "/img/projects/redes_cap3.png"],
+      "link": "https://fcfmredesbeauchef.cl/"
     },
     {
       "index": 4,

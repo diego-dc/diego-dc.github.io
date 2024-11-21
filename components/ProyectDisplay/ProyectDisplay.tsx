@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
 import "./ProjectDisplay.css";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import Link from "next/link";
 
 import Image from "next/image";
 import ScrollLineStatics from "../ScrollLineStatics/ScrollLineStatics";
@@ -13,6 +16,7 @@ interface PortfolioData {
   date: string;
   imageSrc: string;
   otherImages: string[];
+  link?: string;
 }
 
 interface ProyectDisplayProps {
@@ -20,13 +24,63 @@ interface ProyectDisplayProps {
 }
 
 const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
+  useGSAP(() => {
+    const tl = gsap.timeline();
+
+    tl.from(".project-presentation-div", {
+      transform: "scale(0)",
+      duration: 1,
+    });
+
+    gsap.from(".image-section", {
+      opacity: 0,
+      scale: 0.5,
+      scrollTrigger: {
+        trigger: ".image-section",
+        start: "top 100%",
+        end: "top 75%",
+        toggleActions: "play none reverse none",
+        scrub: 5,
+      },
+    });
+
+    gsap.from(".description-section", {
+      opacity: 0,
+      scale: 0.5,
+      scrollTrigger: {
+        trigger: ".description-section",
+        start: "top 100%",
+        end: "top 75%",
+        toggleActions: "play none reverse none",
+        scrub: 5,
+      },
+    });
+
+    const projectImages = gsap.utils.toArray<HTMLElement>(".project-images");
+
+    if (projectImages.length > 0) {
+      projectImages.forEach((projectImage) => {
+        gsap.from(projectImage, {
+          opacity: 0,
+          scale: 0.5,
+          scrollTrigger: {
+            trigger: projectImage,
+            start: "top 100%",
+            end: "top 75%",
+            scrub: 4,
+          },
+        });
+      });
+    }
+  }, []);
+
   if (!project) {
     return <div>No se pudo desplegar el proyecto correctamente...</div>;
   }
 
   return (
-    <div className="flex flex-col items-center justify-center pt-40 pb-20 space-y-20">
-      <div className="flex flex-col items-center justify-center space-y-6 text-center">
+    <div className="flex flex-col items-center justify-center w-full pt-40 pb-20 space-y-20">
+      <div className="flex flex-col items-center justify-center space-y-6 text-center project-presentation-div">
         <p>Project</p>
         <h1 className="text-7xl">{project.projectName}</h1>
         <div className="flex flex-wrap gap-2 project-item-tags ">
@@ -44,7 +98,7 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
       {/* Imagen con scroll-lines */}
 
       <ScrollLineStatics>
-        <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 relative aspect-video w-full rounded">
+        <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 relative aspect-video w-full rounded image-section">
           <Image
             alt="ProjectImage"
             src={`${project.imageSrc}`}
@@ -58,7 +112,7 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
 
       {/* Container con info del proyecto */}
 
-      <div className="flex flex-col w-4/5 h-full overflow-hidden border rounded border-base-300">
+      <div className="flex flex-col w-4/5 h-full overflow-hidden border rounded border-base-300 description-section">
         <div className="flex items-center h-10 gap-4 px-4 border-b min-h-10 border-base-300 glossy-90">
           <h2 className="text-sm font-medium tracking-normal lowercase cursor-default font-body text-neutral">
             {project.projectName}
@@ -115,7 +169,7 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
             </div>
             <div className="flex flex-col p-12 space-y-8">
               <div className="flex flex-col text-start">
-                <p className="text-md text-slate-500">Tags</p>
+                <p className="mb-2 text-md text-slate-500">Tags</p>
                 <div className="flex flex-wrap gap-2 project-item-tags ">
                   {project.tags.map((tag, i) => (
                     <div
@@ -127,10 +181,27 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
                   ))}
                 </div>
               </div>
-              <div className="flex flex-col text-start">
-                <p className="font-medium text-md text-slate-500">Algo más?</p>
-                <p className="text-lg font-medium">Algo acá</p>
-              </div>
+              {project.link && (
+                <div className="flex flex-col text-start">
+                  <p className="mb-2 font-medium text-md text-slate-500">
+                    Link to project
+                  </p>
+                  <Link href="/Portfolio" className="button-with-icon">
+                    <svg
+                      className="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                      width={16}
+                      height={16}
+                      stroke="currentColor"
+                      fill="currentColor"
+                    >
+                      <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                    </svg>
+                    <span className="ms-1">Visit Page</span>
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -140,7 +211,7 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
 
       <div className="flex flex-col items-center justify-center w-4/5 space-y-12">
         {project.otherImages.map((imageSrc, i) => (
-          <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 relative aspect-video w-full rounded">
+          <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 relative aspect-video w-full rounded project-images">
             <Image
               alt={`ProjectImage${i}`}
               src={`${imageSrc}`}

@@ -71,7 +71,7 @@ section{
     justify-content: center;
     border: 1px solid var(--color-accent);
     letter-spacing: 1px;
-    padding: 1rem 2rem;
+    padding: 1rem 1.75rem;
     text-align: center;
     min-width: 120px;
     min-height: 40px;
@@ -102,7 +102,7 @@ section{
 }
 
 .button-with-icon:hover span {
-    transform: translateX(calc(200%));
+    transform: translateX(calc(200% + 30px));
 }
 .button-with-icon:hover .icon {
     transform: translateX(calc(200% + 12px));
