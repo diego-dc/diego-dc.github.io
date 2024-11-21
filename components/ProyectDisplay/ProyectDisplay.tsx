@@ -81,8 +81,12 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
   return (
     <div className="flex flex-col items-center justify-center w-full pt-40 pb-20 space-y-20">
       <div className="flex flex-col items-center justify-center space-y-6 text-center project-presentation-div">
-        <p>Project</p>
-        <h1 className="text-7xl">{project.projectName}</h1>
+        <p className="p-0 m-0 text-md md:text-lg lg:text-xl text-slate-500">
+          Project
+        </p>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
+          {project.projectName}
+        </h1>
         <div className="flex flex-wrap gap-2 project-item-tags ">
           {project.tags.map((tag, i) => (
             <div
@@ -154,22 +158,26 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
           </div>
         </div>
         <div className="p-4 font-medium glossy-75 text-neutral">
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-1 md:grid-cols-3">
             <div className="flex flex-col col-span-2 p-12 space-y-8">
               <div className="flex flex-col text-start">
                 <p className="text-md text-slate-500">Year</p>
                 <p className="text-lg">{project.date}</p>
               </div>
               <div className="flex flex-col text-start">
-                <p className="font-medium text-md text-slate-500">
+                <p className="text-sm font-medium md:text-md text-slate-500">
                   Description
                 </p>
-                <p className="text-lg font-medium">{project.description}</p>
+                <p className="font-medium text-md md:text-lg">
+                  {project.description}
+                </p>
               </div>
             </div>
             <div className="flex flex-col p-12 space-y-8">
               <div className="flex flex-col text-start">
-                <p className="mb-2 text-md text-slate-500">Tags</p>
+                <p className="mb-2 text-sm font-medium md:text-md text-slate-500">
+                  Tags
+                </p>
                 <div className="flex flex-wrap gap-2 project-item-tags ">
                   {project.tags.map((tag, i) => (
                     <div
@@ -183,7 +191,7 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
               </div>
               {project.link && (
                 <div className="flex flex-col text-start">
-                  <p className="mb-2 font-medium text-md text-slate-500">
+                  <p className="mb-2 text-sm font-medium md:text-md text-slate-500">
                     Link to project
                   </p>
                   <Link href="/Portfolio" className="button-with-icon">

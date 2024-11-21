@@ -26,7 +26,7 @@ export default function Page() {
               <PortfolioSection limit={4}></PortfolioSection>
             </ScrollLineStatics>
           </section>
-          <section id="ContactSection" className="p-8 xl:p-0">
+          <section id="ContactSection" className="p-0">
             <ContactCarousel></ContactCarousel>
           </section>
         </div>

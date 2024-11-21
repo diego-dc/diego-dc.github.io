@@ -46,7 +46,7 @@ export default function Page({ params }: PortfolioProps) {
         <section id="ProjectDisplay" className="p-0 m-0">
           <ProyectDisplay project={project} />
         </section>
-        <section id="UpNext" className="p-0 mb-20">
+        <section id="UpNext" className="px-10 mb-20 xl:p-0">
           <div className="flex flex-col items-center justify-center w-screen space-y-10">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
               <span className="highlights-title">Up </span>{" "}
@@ -55,7 +55,7 @@ export default function Page({ params }: PortfolioProps) {
               </span>
             </h2>
             {nextProject && (
-              <div className="w-full xl:w-[85%]">
+              <div className="w-[90%] xl:w-[85%]">
                 <Link href={`/Portfolio/${nextProject.index}`}>
                   <ProjectCard
                     index={nextProject.index}
