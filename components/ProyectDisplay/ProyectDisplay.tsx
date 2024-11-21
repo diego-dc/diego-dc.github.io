@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import "./ProjectDisplay.css";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import Link from "next/link";
