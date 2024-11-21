@@ -32,7 +32,7 @@ export default function Page({ params }: PortfolioProps) {
   }
 
   if (!nextProject) {
-    nextProject = projects.find((item) => item.index === 0);
+    nextProject = projects.find((item) => item.index === 1);
   }
 
   return (

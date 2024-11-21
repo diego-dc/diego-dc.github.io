@@ -17,8 +17,8 @@ const PortfolioThumbnail = () => {
           className="text-slate-700 opacity-15"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 512"
-          width={"full"}
-          height={"full"}
+          width="100%"
+          height="100%"
           stroke=""
           fill="currentColor"
         >
