@@ -23,11 +23,6 @@
     padding-left: 1.25rem;
 }
 
-.glossy-75, .glossy-90 {
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-}
-
 .dragItem {
     top: var(--panel-top);
     bottom: var(--panel-bottom);

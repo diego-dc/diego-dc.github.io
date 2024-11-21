@@ -36,6 +36,21 @@ section{
     padding: 100px 20vw;
 }
 
+.glossy {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.glossy-90 {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.glossy-75 {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
 .spinner {
     background-image: linear-gradient(var(--color-secondary) 35%,var(--color-highlight));
     width: 100px;
@@ -112,3 +127,4 @@ section{
     transition: all 0.5s ease-in-out;
     white-space: nowrap;
 }
+

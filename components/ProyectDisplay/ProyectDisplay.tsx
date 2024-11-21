@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import "./ProjectDisplay.css";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import Link from "next/link";
@@ -176,7 +175,7 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
         </div>
         <div className="p-4 font-medium glossy-75 text-neutral">
           <div className="grid grid-cols-1 md:grid-cols-3">
-            <div className="flex flex-col col-span-2 p-12 space-y-8">
+            <div className="flex flex-col col-span-2 p-2 space-y-8 md:p-10 lg:p-12">
               <div className="flex flex-col text-start">
                 <p className="text-md text-slate-500">Year</p>
                 <p className="text-lg">{project.date}</p>

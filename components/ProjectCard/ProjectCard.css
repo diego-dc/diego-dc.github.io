@@ -48,13 +48,13 @@
     transition-timing-function: cubic-bezier(.615,.19,.305,.91);
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1279px) {
+@media only screen and (min-width: 0px) and (max-width: 1500px) {
     .project-item-image {
         grid-area: image;
     }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1500px) {
     /* For xl: */
     .project-item {
         display: grid;
