@@ -17,6 +17,7 @@ interface PortfolioData {
   imageSrc: string;
   otherImages: string[];
   link?: string;
+  company?: string;
 }
 
 interface ProyectDisplayProps {
@@ -84,7 +85,7 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
         <p className="p-0 m-0 text-md md:text-lg lg:text-xl text-slate-500">
           Project
         </p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
+        <h1 className="mb-2 text-3xl sm:text-3xl md:text-6xl lg:text-6xl xl:text-8xl">
           {project.projectName}
         </h1>
         <div className="flex flex-wrap gap-2 project-item-tags ">
@@ -175,6 +176,12 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
             </div>
             <div className="flex flex-col p-12 space-y-8">
               <div className="flex flex-col text-start">
+                <p className="font-medium text-md text-slate-500">
+                  Comissioned by / On behalf of
+                </p>
+                <p className="text-lg font-medium">{project.company}</p>
+              </div>
+              <div className="flex flex-col text-start">
                 <p className="mb-2 text-sm font-medium md:text-md text-slate-500">
                   Tags
                 </p>
@@ -194,7 +201,12 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
                   <p className="mb-2 text-sm font-medium md:text-md text-slate-500">
                     Link to project
                   </p>
-                  <Link href="/Portfolio" className="button-with-icon">
+                  <Link
+                    href={project.link}
+                    className="button-with-icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <svg
                       className="icon"
                       xmlns="http://www.w3.org/2000/svg"
