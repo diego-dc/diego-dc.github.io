@@ -26,7 +26,7 @@ const PortfolioThumbnail = () => {
         </svg>
       </div>
       <div className="flex flex-col items-center justify-center space-y-10 text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl">
           <span className="highlights-title">A collection of my </span>{" "}
           <span className="text-[var(--color-highlight)] highlights-title">
             Work

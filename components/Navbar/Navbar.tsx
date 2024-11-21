@@ -189,8 +189,8 @@ const Navbar = () => {
       </div>
 
       {isClick && (
-        <div className="flex flex-col items-center justify-center w-screen h-screen gap-32 text-center">
-          <div className="flex flex-col gap-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+        <div className="flex flex-col items-center w-screen h-screen mt-0 text-center 2xl:mt-10 gap-14">
+          <div className="flex flex-col gap-8 text-5xl md:text-6xl 2xl:text-8xl">
             <Link href="/" className="block p-2 navlink" onClick={toggleNavbar}>
               Home
             </Link>
