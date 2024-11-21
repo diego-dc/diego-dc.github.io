@@ -6,7 +6,7 @@
       "date": "2024",
       "imageSrc": "/img/projects/diegc-website.png",
       "description": "This project started as a personal challenge to dive into technologies I wasn’t very familiar with yet, as well as explore others that piqued my interest. It allowed me to create something personal where I could apply and showcase my skills. The main focus of this project was to experiment with new techniques, try out animations, and blend my creative abilities with my technical skills. The idea is to keep developing the site, making changes or experimenting with styles as I learn more. It's a blank canvas that I intend to fully explore, applying things that interest me and creating something eye-catching to showcase to others!",
-      "otherImages" : ["/img/projects/MyWebsiteCap1.png"]
+      "otherImages" : ["/img/projects/MyWebsite-Cap1.png"]
     },
     {
       "index": 2,
@@ -16,7 +16,7 @@
       "imageSrc": "/img/projects/nirsecl.png",
       "description": 
         "Developed a website to showcase reports on the Nirsevimab vaccination process in Chile. The project involved migrating the framework from a Dash application to a Django-based web platform. Key responsibilities included enhancing the design, ensuring full responsiveness for mobile devices, and creating dynamic, fully responsive charts. These improvements provided seamless access to crucial data, supporting the study and evaluation of the vaccine.",
-      "otherImages" : ["/img/projects/NirseCsap1.png","/img/projects/NirseCap2.png"],
+      "otherImages" : ["/img/projects/Nirse-Cap1.png","/img/projects/Nirse-Cap2.png"],
       "link": "https://nirse.isci.cl/",
       "company": "ISCI"
     },
@@ -27,7 +27,7 @@
       "date": "2023",
       "imageSrc": "/img/projects/RedesBeauchef.png",
       "description": "I led the development of the website for the 'Feria Laboral' organized by Redes Beauchef, tackling the challenge of creating the platform within a very limited timeframe. The platform enabled over 300 job offers to be published and facilitated more than 5,000 applications, playing a crucial role in the event's success. This project was a significant challenge, as I participated in every stage, from evaluating its feasibility to launching it in production and maintaining it during the event. I took on the role of a key developer, working on various aspects, including designing the data model and database structure, implementing user management and ensuring robust security measures, developing the application's UI/UX and multiple views, and creating and managing forms for efficient user interaction. The platform was built with a focus on scalability and adaptability, ensuring its continued use in future editions of the Feria Laboral. Today, the platform remains an integral tool for the Beauchef campus job fairs.",
-      "otherImages" : ["/img/projects/redesCap1.png", "/img/projects/redesCap2.png", "/img/projects/redesCap3.png"],
+      "otherImages" : ["/img/projects/redes-Cap1.png", "/img/projects/redes-Cap2.png", "/img/projects/redes-Cap3.png"],
       "link": "https://fcfmredesbeauchef.cl/",
       "company": "Redes Beauchef"
     },
