@@ -61,11 +61,10 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ limit = 3 }) => {
           },
         });
         if (projectTitle) {
-          const splitProjectTitle = new SplitTextJS(projectTitle);
-
-          gsap.from(splitProjectTitle.chars, {
+          gsap.from(projectTitle, {
             opacity: 0,
             x: -10,
+            transform: "rotate(-10deg)",
             strokeOpacity: 0,
             scrollTrigger: {
               trigger: projectCard,

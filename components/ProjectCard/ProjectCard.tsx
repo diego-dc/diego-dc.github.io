@@ -20,20 +20,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   imageSrc,
 }) => {
   return (
-    <div className="project-card group/project project-item relative mt-10 justify-between gap-4 rounded border border-[var(--color-light)] p-8 text-sm font-medium transition-all md:gap-y-3 xl:mt-0 xl:px-8 xl:py-20 xl:hover:gap-x-0 bg-[rgb(15,15,15,0.25)]">
+    <div className="project-card group/project project-item relative mt-10 justify-between gap-4 rounded border border-[var(--color-light)] p-8 text-sm font-medium transition-all md:gap-y-3 2xl:mt-0 2xl:px-8 2xl:py-20 2xl:hover:gap-x-0 bg-[rgb(15,15,15,0.25)]">
       <div className="pt-1 transition-all project-item-index md:w-5 md: xl:group-hover/project:w-0 xl:group-hover/project:opacity-0">
         {index}
       </div>
-      <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-6xl xl:w-3/5 2xl:w-2/5 project-item-title">
+      <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-6xl xl:w-4/5 text-wrap 2xl:w-2/5 project-item-title">
         {projectName}
       </h3>
-      <div className="flex gap-0 transition-all project-item-year justify-self-end xl:group-hover/project:gap-2">
+      <div className="flex gap-0 transition-all project-item-year justify-self-end 2xl:group-hover/project:gap-2">
         {date}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
           fill="currentColor"
-          className="w-0 mt-px transition-all icon text-neutral xl:group-hover/project:w-4"
+          className="w-0 mt-px transition-all icon text-neutral xl:group-hover/project:w-4 ms-1"
           width={16}
           height={16}
         >
@@ -50,22 +50,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         ))}
       </div>
-      <div className="project-item-image group/deck relative z-10 mx-4 -mt-20 -mb-4 aspect-[16/9] transition-all group-hover/project:scale-100 group-hover/project:opacity-100 sm:mb-0 sm:ml-auto sm:mr-0 sm:w-9/12 md:w-8/12 lg:mr-16 lg:w-6/12 xl:w-[37%] xl:absolute xl:left-[70%] xl:top-[45%] xl:m-0 xl:h-full xl:w-auto xl:-translate-x-1/2 xl:-translate-y-1/2 xl:scale-75 xl:opacity-0">
+      <div className="project-item-image group/deck relative z-10 mx-4 -mt-20 -mb-4 aspect-[16/9] transition-all group-hover/project:scale-100 group-hover/project:opacity-100 sm:mb-0 sm:ml-auto sm:mr-0 sm:w-9/12 md:w-8/12 lg:mr-16 lg:w-6/12 2xl:w-[37%] 2xl:absolute 2xl:left-[70%] 2xl:top-[45%] 2xl:m-0 2xl:h-full 2xl:w-auto 2xl:-translate-x-1/2 2xl:-translate-y-1/2 2xl:scale-75 2xl:opacity-0">
         <div
-          className="hidden image-card xl:block opacity-15"
+          className="hidden image-card 2xl:block opacity-15"
           style={{ backgroundColor: "#ffffff" }}
         ></div>
-        <div className="image-card hidden xl:block opacity-30 xl:group-hover/deck:-rotate-1 bg-[var(--color-accent)]"></div>
-        <div className="image-card hidden xl:block opacity-45 xl:group-hover/deck:-rotate-2 bg-[var(--color-accent)]"></div>
-        <div className="image-card hidden xl:block opacity-60 xl:group-hover/deck:-rotate-3 bg-[var(--color-accent)]"></div>
-        <div className="image-card hidden xl:block opacity-75 xl:group-hover/deck:rotate-[-4deg] bg-[var(--color-accent)]"></div>
+        <div className="image-card hidden 2xl:block opacity-30 2xl:group-hover/deck:-rotate-1 bg-[var(--color-accent)]"></div>
+        <div className="image-card hidden 2xl:block opacity-45 2xl:group-hover/deck:-rotate-2 bg-[var(--color-accent)]"></div>
+        <div className="image-card hidden 2xl:block opacity-60 2xl:group-hover/deck:-rotate-3 bg-[var(--color-accent)]"></div>
+        <div className="image-card hidden 2xl:block opacity-75 2xl:group-hover/deck:rotate-[-4deg] bg-[var(--color-accent)]"></div>
         <Image
           width={480}
           height={270}
           alt="Diego Caviedes Portfolio Section"
           loading="lazy"
           src={imageSrc}
-          className="image-card max-w-[1250px] md:max-w-[75vw] lg:max-w-[50vw] xl:max-w-[600px] sm:-rotate-3 xl:rotate-0 xl:group-hover/deck:rotate-[-5deg]"
+          className="image-card max-w-[1250px] md:max-w-[75vw] lg:max-w-[50vw] 2xl:max-w-[600px] sm:-rotate-3 2xl:rotate-0 2xl:group-hover/deck:rotate-[-5deg]"
         />
       </div>
     </div>
