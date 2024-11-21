@@ -110,7 +110,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ limit = 3 }) => {
   return (
     <div className="flex flex-col gap-[1.5rem] mx-auto w-full xl:w-[85%]">
       {projects.slice(0, limit ?? projects.length).map((project) => (
-        <Link href={`/Portfolio/${project.index}`}>
+        <Link key={project.index} href={`/Portfolio/${project.index}`}>
           <ProjectCard
             key={project.index}
             index={project.index}

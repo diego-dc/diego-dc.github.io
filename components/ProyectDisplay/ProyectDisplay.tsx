@@ -125,7 +125,7 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
             src={`${project.imageSrc}`}
             title="ProjectImage"
             objectFit="cover"
-            layout="fill"
+            fill
             className="rounded"
           ></Image>
         </div>
@@ -253,7 +253,7 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
               src={`${imageSrc}`}
               title={`ProjectImage${i}`}
               objectFit="cover"
-              layout="fill"
+              fill
               className="rounded"
             ></Image>
           </div>
