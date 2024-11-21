@@ -53,7 +53,7 @@ const Navbar = () => {
             ${initialVisible ? "visible-navbar" : "hidden-navbar"}
           `}
     >
-      <div className="max-w-screen-xl mx-auto lg:px-8 px-6">
+      <div className="max-w-screen-xl px-6 mx-auto lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
@@ -112,6 +112,21 @@ const Navbar = () => {
                   fill="currentColor"
                 >
                   <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+                </svg>
+              </Link>
+              <Link
+                href="/Portfolio"
+                className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512"
+                  width={30}
+                  height={24}
+                  stroke="currentColor"
+                  fill="currentColor"
+                >
+                  <path d="M64 96c0-35.3 28.7-64 64-64l384 0c35.3 0 64 28.7 64 64l0 256-64 0 0-256L128 96l0 256-64 0L64 96zM0 403.2C0 392.6 8.6 384 19.2 384l601.6 0c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8L76.8 480C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z" />
                 </svg>
               </Link>
               <Link
@@ -174,8 +189,8 @@ const Navbar = () => {
       </div>
 
       {isClick && (
-        <div className="flex flex-col items-center justify-center w-screen h-screen gap-32 text-center">
-          <div className="flex flex-col gap-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+        <div className="flex flex-col items-center w-screen h-screen mt-0 text-center 2xl:mt-10 gap-14">
+          <div className="flex flex-col gap-8 text-5xl md:text-6xl 2xl:text-8xl">
             <Link href="/" className="block p-2 navlink" onClick={toggleNavbar}>
               Home
             </Link>
@@ -185,6 +200,13 @@ const Navbar = () => {
               onClick={toggleNavbar}
             >
               About
+            </Link>
+            <Link
+              href="/Portfolio"
+              className="block p-2 navlink"
+              onClick={toggleNavbar}
+            >
+              My Work
             </Link>
             <Link
               href="/KCLPARTPage"

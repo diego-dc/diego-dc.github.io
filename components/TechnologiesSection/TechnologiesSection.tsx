@@ -2,11 +2,12 @@
 
 import React from "react";
 import Image from "next/image";
-import "./TechnologiesSection.css";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import SplitTextJS from "split-text-js";
+
+import ScrollLineStatics from "../ScrollLineStatics/ScrollLineStatics";
 
 const TechnologiesSection = () => {
   useGSAP(() => {
@@ -56,119 +57,113 @@ const TechnologiesSection = () => {
           work with
         </h2>
       </div>
-      <div className="relative flex flex-col items-center justify-center gap-0 px-4 lg:px-8 xl:px-0 techsContainer">
-        <div
-          className="top-0 scroll-line-static-top"
-          style={{ height: `9rem` }}
-        ></div>
-        <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12">
-          <div className="grid grid-cols-2 gap-12 md:grid-cols-5">
-            <div className="flex items-center justify-center w-full h-14">
-              <Image
-                alt="CSS"
-                width={0}
-                height={0}
-                style={{ width: "auto", height: "100%" }}
-                src={"/img/logos/css-3.svg"}
-                title="CSS"
-              ></Image>
-            </div>
-            <div className="flex items-center justify-center w-full h-14">
-              <Image
-                alt="Python"
-                width={0}
-                height={0}
-                style={{ width: "auto", height: "100%" }}
-                src={"/img/logos/python-5.svg"}
-                title="Python"
-              ></Image>
-            </div>
-            <div className="flex items-center justify-center w-full h-14">
-              <Image
-                alt="Javascript"
-                width={0}
-                height={0}
-                style={{ width: "auto", height: "100%" }}
-                src={"/img/logos/logo-javascript.svg"}
-                title="Javascript"
-              ></Image>
-            </div>
-            <div className="flex items-center justify-center w-full h-14">
-              <Image
-                alt="React"
-                width={0}
-                height={0}
-                style={{ width: "auto", height: "100%" }}
-                src={"/img/logos/react-2.svg"}
-                title="React"
-              ></Image>
-            </div>
-            <div className="flex items-center justify-center w-full h-14">
-              <Image
-                alt="Django"
-                width={0}
-                height={0}
-                style={{ width: "auto", height: "100%" }}
-                src={"/img/logos/django.svg"}
-                title="Django"
-              ></Image>
-            </div>
-            <div className="flex items-center justify-center w-full h-14">
-              <Image
-                alt="Tailwind"
-                width={0}
-                height={0}
-                style={{ width: "auto", height: "100%" }}
-                src={"/img/logos/tailwind-css-1.svg"}
-                title="Tailwind"
-              ></Image>
-            </div>
-            <div className="flex items-center justify-center w-full h-14">
-              <Image
-                alt="Bootstrap"
-                width={0}
-                height={0}
-                style={{ width: "auto", height: "100%" }}
-                src={"/img/logos/bootstrap-5.svg"}
-                title="Bootstrap"
-              ></Image>
-            </div>
-            <div className="flex items-center justify-center w-full h-14">
-              <Image
-                alt="GSAP"
-                width={0}
-                height={0}
-                style={{ width: "auto", height: "100%" }}
-                src={"/img/logos/gsap-greensock.svg"}
-                title="GSAP"
-              ></Image>
-            </div>
-            <div className="flex items-center justify-center w-full h-14">
-              <Image
-                alt="Angular"
-                width={0}
-                height={0}
-                style={{ width: "auto", height: "100%" }}
-                src={"/img/logos/angular.svg"}
-                title="Angular"
-              ></Image>
-            </div>
-            <div className="flex items-center justify-center w-full h-14">
-              <Image
-                alt="NodeJs"
-                width={0}
-                height={0}
-                style={{ width: "auto", height: "100%" }}
-                src={"/img/logos/nodejs.svg"}
-                title="NodeJs"
-              ></Image>
+      <div className="techsContainer">
+        <ScrollLineStatics width="w-full">
+          <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 ">
+            <div className="grid grid-cols-2 gap-12 md:grid-cols-5">
+              <div className="flex items-center justify-center w-full h-14">
+                <Image
+                  alt="CSS"
+                  width={0}
+                  height={0}
+                  style={{ width: "auto", height: "100%" }}
+                  src={"/img/logos/css-3.svg"}
+                  title="CSS"
+                ></Image>
+              </div>
+              <div className="flex items-center justify-center w-full h-14">
+                <Image
+                  alt="Python"
+                  width={0}
+                  height={0}
+                  style={{ width: "auto", height: "100%" }}
+                  src={"/img/logos/python-5.svg"}
+                  title="Python"
+                ></Image>
+              </div>
+              <div className="flex items-center justify-center w-full h-14">
+                <Image
+                  alt="Javascript"
+                  width={0}
+                  height={0}
+                  style={{ width: "auto", height: "100%" }}
+                  src={"/img/logos/logo-javascript.svg"}
+                  title="Javascript"
+                ></Image>
+              </div>
+              <div className="flex items-center justify-center w-full h-14">
+                <Image
+                  alt="React"
+                  width={0}
+                  height={0}
+                  style={{ width: "auto", height: "100%" }}
+                  src={"/img/logos/react-2.svg"}
+                  title="React"
+                ></Image>
+              </div>
+              <div className="flex items-center justify-center w-full h-14">
+                <Image
+                  alt="Django"
+                  width={0}
+                  height={0}
+                  style={{ width: "auto", height: "100%" }}
+                  src={"/img/logos/django.svg"}
+                  title="Django"
+                ></Image>
+              </div>
+              <div className="flex items-center justify-center w-full h-14">
+                <Image
+                  alt="Tailwind"
+                  width={0}
+                  height={0}
+                  style={{ width: "auto", height: "100%" }}
+                  src={"/img/logos/tailwind-css-1.svg"}
+                  title="Tailwind"
+                ></Image>
+              </div>
+              <div className="flex items-center justify-center w-full h-14">
+                <Image
+                  alt="Bootstrap"
+                  width={0}
+                  height={0}
+                  style={{ width: "auto", height: "100%" }}
+                  src={"/img/logos/bootstrap-5.svg"}
+                  title="Bootstrap"
+                ></Image>
+              </div>
+              <div className="flex items-center justify-center w-full h-14">
+                <Image
+                  alt="GSAP"
+                  width={0}
+                  height={0}
+                  style={{ width: "auto", height: "100%" }}
+                  src={"/img/logos/gsap-greensock.svg"}
+                  title="GSAP"
+                ></Image>
+              </div>
+              <div className="flex items-center justify-center w-full h-14">
+                <Image
+                  alt="Angular"
+                  width={0}
+                  height={0}
+                  style={{ width: "auto", height: "100%" }}
+                  src={"/img/logos/angular.svg"}
+                  title="Angular"
+                ></Image>
+              </div>
+              <div className="flex items-center justify-center w-full h-14">
+                <Image
+                  alt="NodeJs"
+                  width={0}
+                  height={0}
+                  style={{ width: "auto", height: "100%" }}
+                  src={"/img/logos/nodejs.svg"}
+                  title="NodeJs"
+                ></Image>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          className="top-0 scroll-line-static-bottom"
-          style={{ height: `9rem` }}
-        ></div>
+        </ScrollLineStatics>
       </div>
     </div>
   );

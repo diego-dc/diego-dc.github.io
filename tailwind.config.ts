@@ -14,15 +14,22 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        primary: 'var(--color-primary)',
-        secondary: 'var(--color-secondary)',
-        accent: 'var(--color-accent)',
-        background: 'var(--color-background)',
-        text: 'var(--color-text)',
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        accent: "var(--color-accent)",
+        background: "var(--color-background)",
+        text: "var(--color-text)",
       },
       textColor: {
-        color: 'var(--color-accent)'
-      }
+        color: "var(--color-accent)",
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px", // Verifica que sea 1280px
+        "2xl": "1536px",
+      },
     },
   },
   plugins: [],
