@@ -73,6 +73,22 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
         });
       });
     }
+
+    {
+      /* TODO: This effect is for a external element only existing in [id]/page.tsx - Its not a very clean way to achieve this.*/
+    }
+
+    gsap.from(".upNext-section", {
+      opacity: 0,
+      scale: 0.5,
+      scrollTrigger: {
+        trigger: ".upNext-section",
+        start: "top 100%",
+        end: "top 75%",
+        toggleActions: "play none reverse none",
+        scrub: 5,
+      },
+    });
   }, []);
 
   if (!project) {

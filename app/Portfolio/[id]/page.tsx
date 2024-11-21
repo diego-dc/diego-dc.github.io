@@ -1,5 +1,4 @@
 // app/(portfolio)/[id]/page.tsx
-
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
@@ -9,6 +8,8 @@ import projects from "@/data/portfolio.json";
 import Background from "@/components/Background/Background";
 import ProyectDisplay from "@/components/ProyectDisplay/ProyectDisplay";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
+import ContactCarousel from "@/components/ContactCarousel/ContactCarousel";
+import { useGSAP } from "@gsap/react";
 
 interface PortfolioProps {
   params: { id: string };
@@ -46,8 +47,8 @@ export default function Page({ params }: PortfolioProps) {
         <section id="ProjectDisplay" className="p-0 m-0">
           <ProyectDisplay project={project} />
         </section>
-        <section id="UpNext" className="px-10 mb-20 xl:p-0">
-          <div className="flex flex-col items-center justify-center w-screen space-y-10">
+        <section id="UpNext" className="px-10 mb-32 xl:p-0">
+          <div className="flex flex-col items-center justify-center w-screen space-y-10 upNext-section">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
               <span className="highlights-title">Up </span>{" "}
               <span className="text-[var(--color-highlight)] highlights-title">
@@ -68,6 +69,9 @@ export default function Page({ params }: PortfolioProps) {
               </div>
             )}
           </div>
+        </section>
+        <section className="p-0">
+          <ContactCarousel></ContactCarousel>
         </section>
       </main>
     </>
