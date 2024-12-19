@@ -2,12 +2,12 @@
 
 import Head from "next/head";
 
-import Background from "@/components/Background/Background";
-import ThumbnailAbout from "@/components/ThumbnailAbout/ThumbnailAbout";
-import ScrollLine from "@/components/ScrollLine/ScrollLine";
-import ContactCarousel from "@/components/ContactCarousel/ContactCarousel";
-import TechnologiesSection from "@/components/TechnologiesSection/TechnologiesSection";
-import AboutDraggable from "@/components/AboutDraggable/AboutDraggable";
+import Background from "@/components/layout/Background/Background";
+import ThumbnailAbout from "@/components/pages/ThumbnailAbout/ThumbnailAbout";
+import ScrollLine from "@/components/ui/ScrollLine/ScrollLine";
+import ContactCarousel from "@/components/ui/ContactCarousel/ContactCarousel";
+import TechnologiesSection from "@/components/pages/TechnologiesSection/TechnologiesSection";
+import AboutDraggable from "@/components/pages/AboutDraggable/AboutDraggable";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
