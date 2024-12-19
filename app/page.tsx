@@ -4,12 +4,12 @@ import Head from "next/head";
 import React from "react";
 import "../gsap/effects";
 
-import Background from "../components/Background/Background";
-import Thumbnail from "../components/Thumbnail/Thumbnail";
-import ScrollLine from "../components/ScrollLine/ScrollLine";
-import AboutSection from "../components/AboutSection/AboutSection";
-import PortfolioPreview from "@/components/PortfolioPreview/PortfolioPreview";
-import ContactCarousel from "@/components/ContactCarousel/ContactCarousel";
+import Background from "../components/layout/Background/Background";
+import Thumbnail from "../components/pages/Thumbnail/Thumbnail";
+import ScrollLine from "../components/ui/ScrollLine/ScrollLine";
+import AboutSection from "../components/pages/AboutSection/AboutSection";
+import PortfolioPreview from "@/components/pages/PortfolioPreview/PortfolioPreview";
+import ContactCarousel from "@/components/ui/ContactCarousel/ContactCarousel";
 
 export default function Page() {
   return (

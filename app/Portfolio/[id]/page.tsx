@@ -5,10 +5,10 @@ import Link from "next/link";
 
 import projects from "@/data/portfolio.json";
 
-import Background from "@/components/Background/Background";
-import ProyectDisplay from "@/components/ProyectDisplay/ProyectDisplay";
-import ProjectCard from "@/components/ProjectCard/ProjectCard";
-import ContactCarousel from "@/components/ContactCarousel/ContactCarousel";
+import Background from "@/components/layout/Background/Background";
+import ProyectDisplay from "@/components/pages/ProyectDisplay/ProyectDisplay";
+import ProjectCard from "@/components/ui/ProjectCard/ProjectCard";
+import ContactCarousel from "@/components/ui/ContactCarousel/ContactCarousel";
 import { useGSAP } from "@gsap/react";
 
 interface PortfolioProps {

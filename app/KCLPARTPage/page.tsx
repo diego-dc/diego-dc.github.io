@@ -1,5 +1,5 @@
-import Background from "@/components/Background/Background";
-import KCLPThumbnail from "@/components/KCLPThumbnail/KCLPThumbnail";
+import Background from "@/components/layout/Background/Background";
+import KCLPThumbnail from "@/components/pages/KCLPThumbnail/KCLPThumbnail";
 import Head from "next/head";
 
 export default function KCLPARTPage() {

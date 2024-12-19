@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
 
-import Background from "@/components/Background/Background";
-import PortfolioSection from "@/components/PortfolioSection/PortfolioSection";
-import ContactCarousel from "@/components/ContactCarousel/ContactCarousel";
-import PortfolioThumbnail from "@/components/PortfolioThumbnail/PortfolioThumbnail";
-import ScrollLineStatics from "@/components/ScrollLineStatics/ScrollLineStatics";
+import Background from "@/components/layout/Background/Background";
+import PortfolioSection from "@/components/pages/PortfolioSection/PortfolioSection";
+import ContactCarousel from "@/components/ui/ContactCarousel/ContactCarousel";
+import PortfolioThumbnail from "@/components/pages/PortfolioThumbnail/PortfolioThumbnail";
+import ScrollLineStatics from "@/components/ui/ScrollLineStatics/ScrollLineStatics";
 
 export default function Page() {
   return (
