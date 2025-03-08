@@ -51,7 +51,7 @@ const AboutDraggable = () => {
               className="dragItem w-full transition-all ease-out odd:ml-auto xl:absolute xl:w-[45%] odd:xl:ml-0"
             >
               <div className="flex flex-col h-full overflow-hidden border rounded border-base-300">
-                <div className="flex items-center h-10 gap-4 px-4 border-b min-h-10 border-base-300 glossy-90">
+                <div className="flex items-center h-10 gap-4 px-4 border-b min-h-10 border-base-300 backdrop-blur-lg">
                   <h2 className="text-sm font-medium tracking-normal lowercase cursor-default font-body text-neutral">
                     About me
                   </h2>
@@ -61,7 +61,7 @@ const AboutDraggable = () => {
                     <IconXmark width={16} height={16} />
                   </div>
                 </div>
-                <div className="p-4 font-medium markdown info-panel-lines glossy-75 text-neutral">
+                <div className="p-4 font-medium markdown info-panel-lines backdrop-blur-sm text-neutral">
                   <p>
                     My name is{" "}
                     <span className="text-[var(--color-highlight)]">Diego</span>
@@ -135,7 +135,7 @@ const AboutDraggable = () => {
               className="dragItem w-10/12 sm:w-8/12 md:w-7/12 transition-all ease-out odd:ml-auto xl:absolute xl:w-[25%] odd:xl:ml-0"
             >
               <div className="flex flex-col h-full overflow-hidden border rounded border-base-300">
-                <div className="flex items-center h-10 gap-4 px-4 border-b min-h-10 border-base-300 glossy-90">
+                <div className="flex items-center h-10 gap-4 px-4 border-b min-h-10 border-base-300 backdrop-blur-lg">
                   <h2 className="text-sm font-medium tracking-normal lowercase cursor-default font-body text-neutral">
                     Where i work
                   </h2>
@@ -145,7 +145,7 @@ const AboutDraggable = () => {
                     <IconXmark width={16} height={16} />
                   </div>
                 </div>
-                <div className="p-4 font-medium markdown info-panel-lines glossy-75 text-neutral">
+                <div className="p-4 font-medium markdown info-panel-lines backdrop-blur-sm text-neutral">
                   <p>
                     Currently based in{" "}
                     <span className="text-[var(--color-highlight)]">
@@ -167,7 +167,7 @@ const AboutDraggable = () => {
               className="dragItem w-10/12 sm:w-8/12 md:w-7/12 transition-all ease-out odd:ml-auto xl:absolute xl:w-[20%] odd:xl:ml-0"
             >
               <div className="flex flex-col h-full overflow-hidden border rounded border-base-300">
-                <div className="flex items-center h-10 gap-4 px-4 border-b min-h-10 border-base-300 glossy-90">
+                <div className="flex items-center h-10 gap-4 px-4 border-b min-h-10 border-base-300 backdrop-blur-lg">
                   <h2 className="text-sm font-medium tracking-normal lowercase cursor-default font-body text-neutral">
                     Portrait
                   </h2>
@@ -177,7 +177,7 @@ const AboutDraggable = () => {
                     <IconXmark width={16} height={16} />
                   </div>
                 </div>
-                <div className="p-0 m-0 font-medium markdown glossy-75 text-neutral">
+                <div className="p-0 m-0 font-medium markdown backdrop-blur-sm text-neutral">
                   <Image
                     src="/img/Portrait.JPG"
                     alt="Img1"
@@ -195,7 +195,7 @@ const AboutDraggable = () => {
               className="dragItem w-10/12 sm:w-8/12 md:w-7/12 transition-all ease-out odd:ml-auto xl:absolute xl:w-[25%] odd:xl:ml-0"
             >
               <div className="flex flex-col h-full overflow-hidden border rounded border-base-300">
-                <div className="flex items-center h-10 gap-4 px-4 border-b min-h-10 border-base-300 glossy-90">
+                <div className="flex items-center h-10 gap-4 px-4 border-b min-h-10 border-base-300 backdrop-blur-lg">
                   <h2 className="text-sm font-medium tracking-normal lowercase cursor-default font-body text-neutral">
                     My Hobbies
                   </h2>
@@ -205,7 +205,7 @@ const AboutDraggable = () => {
                     <IconXmark width={16} height={16} />
                   </div>
                 </div>
-                <div className="p-4 font-medium markdown info-panel-lines glossy-75 text-neutral">
+                <div className="p-4 font-medium markdown info-panel-lines backdrop-blur-sm text-neutral">
                   <p>
                     I love sports, specially team sports, which i enjoy the
                     most.
@@ -224,7 +224,7 @@ const AboutDraggable = () => {
               className="dragItem w-10/12 sm:w-8/12 md:w-7/12 transition-all ease-out odd:ml-auto xl:absolute xl:w-[25%] odd:xl:ml-0"
             >
               <div className="flex flex-col h-full overflow-hidden border rounded border-base-300">
-                <div className="flex items-center h-10 gap-4 px-4 border-b min-h-10 border-base-300 glossy-90">
+                <div className="flex items-center h-10 gap-4 px-4 border-b min-h-10 border-base-300 backdrop-blur-lg">
                   <h2 className="text-sm font-medium tracking-normal lowercase cursor-default font-body text-neutral">
                     @KCLP.ART
                   </h2>
@@ -234,7 +234,7 @@ const AboutDraggable = () => {
                     <IconXmark width={16} height={16} />
                   </div>
                 </div>
-                <div className="p-4 font-medium markdown info-panel-lines glossy-75 text-neutral">
+                <div className="p-4 font-medium markdown info-panel-lines backdrop-blur-sm text-neutral">
                   <p>
                     I also create{" "}
                     <span className="text-[var(--color-highlight)]">art</span>{" "}

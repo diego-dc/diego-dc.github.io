@@ -52,7 +52,7 @@
     border-radius: 5px;
 }
 
-.banner .content ::before  {
+.banner .content::before  {
     position: absolute;
     bottom: 30%;
     left: 50%;
