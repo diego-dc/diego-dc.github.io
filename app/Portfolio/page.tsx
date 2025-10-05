@@ -23,7 +23,7 @@ export default function Page() {
           </section>
           <section id="PortfolioSection" className="p-0">
             <ScrollLineStatics width="w-full">
-              <PortfolioSection limit={4}></PortfolioSection>
+              <PortfolioSection limit={5}></PortfolioSection>
             </ScrollLineStatics>
           </section>
           <section id="ContactSection" className="p-0">
