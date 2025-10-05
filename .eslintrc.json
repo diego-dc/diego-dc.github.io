@@ -39,7 +39,6 @@
     "react/jsx-uses-react": "off",
     "react/jsx-uses-vars": "warn",
     "@typescript-eslint/no-unused-vars": "warn",
-    "trailingComma": "none",
     "prettier/prettier": ["error", { "endOfLine": "auto" }]
   },
   "settings": {

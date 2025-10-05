@@ -1,4 +1,4 @@
-"use react";
+"use client";
 import React from "react";
 import PortfolioSection from "../PortfolioSection/PortfolioSection";
 import Link from "next/link";

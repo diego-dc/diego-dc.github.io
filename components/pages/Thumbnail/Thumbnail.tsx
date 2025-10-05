@@ -48,7 +48,7 @@ const Thumbnail = () => {
       <div className="flex items-center justify-center block p-6 sm:hidden homeImg">
         <Image
           src="/img/IMG_0873.PNG"
-          alt="Img1"
+          alt="Diego Caviedes - Full-Stack Developer and Software Engineer"
           width={250}
           height={250}
           className=""

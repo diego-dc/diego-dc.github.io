@@ -1,6 +1,6 @@
 // app/(portfolio)/[id]/page.tsx
 import React from "react";
-import Head from "next/head";
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import projects from "@/data/portfolio.json";
@@ -9,7 +9,6 @@ import Background from "@/components/layout/Background/Background";
 import ProyectDisplay from "@/components/pages/ProyectDisplay/ProyectDisplay";
 import ProjectCard from "@/components/ui/ProjectCard/ProjectCard";
 import ContactCarousel from "@/components/ui/ContactCarousel/ContactCarousel";
-import { useGSAP } from "@gsap/react";
 
 interface PortfolioProps {
   params: { id: string };
@@ -20,6 +19,23 @@ export async function generateStaticParams() {
   return projects.map((project) => ({
     id: project.index.toString(),
   }));
+}
+
+// Generar metadata dinámica para cada proyecto
+export async function generateMetadata({ params }: PortfolioProps): Promise<Metadata> {
+  const { id } = params;
+  const project = projects.find((item) => item.index === Number(id));
+
+  if (!project) {
+    return {
+      title: "Project Not Found",
+    };
+  }
+
+  return {
+    title: project.projectName,
+    description: project.description,
+  };
 }
 
 export default function Page({ params }: PortfolioProps) {
@@ -37,11 +53,6 @@ export default function Page({ params }: PortfolioProps) {
 
   return (
     <>
-      <Head>
-        <title>{project.projectName}</title>
-        <meta name="description" content={project.description} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
       <main>
         <Background></Background>
         <section id="ProjectDisplay" className="p-0 m-0">

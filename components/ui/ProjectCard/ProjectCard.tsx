@@ -62,7 +62,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <Image
           width={480}
           height={270}
-          alt="Diego Caviedes Portfolio Section"
+          alt={`${projectName} - Project screenshot showcasing ${tags.join(', ')}`}
           loading="lazy"
           src={imageSrc}
           className="image-card max-w-[1250px] md:max-w-[75vw] lg:max-w-[50vw] 2xl:max-w-[600px] sm:-rotate-3 2xl:rotate-0 2xl:group-hover/deck:rotate-[-5deg]"

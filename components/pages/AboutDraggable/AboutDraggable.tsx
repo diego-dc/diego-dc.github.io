@@ -180,7 +180,7 @@ const AboutDraggable = () => {
                 <div className="p-0 m-0 font-medium markdown backdrop-blur-sm text-neutral">
                   <Image
                     src="/img/Portrait.JPG"
-                    alt="Img1"
+                    alt="Diego Caviedes - Professional portrait"
                     width={0}
                     height={0}
                     style={{ width: "100%", height: "auto" }}

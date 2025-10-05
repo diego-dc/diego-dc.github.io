@@ -58,7 +58,7 @@ const KCLPThumbnail = () => {
           >
             <Image
               src="/img/IMG_01.JPG"
-              alt="Img1"
+              alt="KCLP.ART digital art piece 1"
               fill={true}
               className="img-item"
             />
@@ -69,7 +69,7 @@ const KCLPThumbnail = () => {
           >
             <Image
               src="/img/IMG_02.PNG"
-              alt="Img1"
+              alt="KCLP.ART digital art piece 2"
               fill={true}
               className="img-item"
             />
@@ -80,7 +80,7 @@ const KCLPThumbnail = () => {
           >
             <Image
               src="/img/IMG_03.JPG"
-              alt="Img1"
+              alt="KCLP.ART digital art piece 3"
               fill={true}
               className="img-item"
             />
@@ -91,7 +91,7 @@ const KCLPThumbnail = () => {
           >
             <Image
               src="/img/IMG_04.JPG"
-              alt="Img1"
+              alt="KCLP.ART digital art piece 4"
               fill={true}
               className="img-item"
             />
@@ -102,7 +102,7 @@ const KCLPThumbnail = () => {
           >
             <Image
               src="/img/IMG_05.JPG"
-              alt="Img1"
+              alt="KCLP.ART digital art piece 5"
               fill={true}
               className="img-item"
             />
@@ -113,7 +113,7 @@ const KCLPThumbnail = () => {
           >
             <Image
               src="/img/IMG_06.JPG"
-              alt="Img1"
+              alt="KCLP.ART digital art piece 6"
               fill={true}
               className="img-item"
             />
@@ -124,7 +124,7 @@ const KCLPThumbnail = () => {
           >
             <Image
               src="/img/IMG_07.JPG"
-              alt="Img1"
+              alt="KCLP.ART digital art piece 7"
               fill={true}
               className="img-item"
             />
@@ -135,7 +135,7 @@ const KCLPThumbnail = () => {
           >
             <Image
               src="/img/IMG_08.JPG"
-              alt="Img1"
+              alt="KCLP.ART digital art piece 8"
               fill={true}
               className="img-item"
             />
@@ -146,7 +146,7 @@ const KCLPThumbnail = () => {
           >
             <Image
               src="/img/IMG_09.JPG"
-              alt="Img1"
+              alt="KCLP.ART digital art piece 9"
               fill={true}
               className="img-item"
             />
@@ -157,7 +157,7 @@ const KCLPThumbnail = () => {
           >
             <Image
               src="/img/IMG_10.JPG"
-              alt="Img1"
+              alt="KCLP.ART digital art piece 10"
               fill={true}
               className="img-item"
             />
@@ -179,7 +179,7 @@ const KCLPThumbnail = () => {
             <h1 className="hidden md:block lg:hidden">Follow me!</h1>
             <Image
               src="/img/logos/Logo_KCLP_White.svg"
-              alt="LogoKCLP"
+              alt="KCLP.ART logo - Follow on Instagram"
               className="img-item"
               width={125}
               height={125}

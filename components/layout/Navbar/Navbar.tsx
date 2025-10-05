@@ -86,24 +86,28 @@ const Navbar = () => {
             <div className="flex items-center ml-4 space-x-12">
               <Link
                 href="/"
+                aria-label="Home"
                 className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90"
               >
                 <IconHouse />
               </Link>
               <Link
                 href="/About"
+                aria-label="About"
                 className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90"
               >
                 <IconUser />
               </Link>
               <Link
                 href="/Portfolio"
+                aria-label="Portfolio"
                 className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90"
               >
                 <IconLaptopCode />
               </Link>
               <Link
                 href="/KCLPARTPage"
+                aria-label="KCLP.ART"
                 className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90"
               >
                 <IconPalette />
@@ -115,6 +119,8 @@ const Navbar = () => {
             <button
               className="inline-flex items-center justify-center p-2 rounded-md"
               onClick={toggleNavbar}
+              aria-label={isClick ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={isClick}
             >
               {isClick ? (
                 <IconXmark className="w-6 h-6 cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90" />
@@ -159,12 +165,15 @@ const Navbar = () => {
               <Link
                 href="https://github.com/diego-dc"
                 target="_blank"
+                aria-label="Visit Diego Caviedes GitHub profile"
+                rel="noopener noreferrer"
                 className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90"
               >
                 <IconGithub width={30} height={30} />
               </Link>
               <Link
                 href="mailto:diegcavi21@gmail.com"
+                aria-label="Send email to Diego Caviedes"
                 className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90"
               >
                 <IconMail width={30} height={30} />
@@ -172,6 +181,8 @@ const Navbar = () => {
               <Link
                 href="https://linkedin.com/in/diego-caviedes-aguirre-022b6b225"
                 target="_blank"
+                aria-label="Visit Diego Caviedes LinkedIn profile"
+                rel="noopener noreferrer"
                 className="cursor-pointer text-slate-400 transition duration-300 ease-linear hover:text-[var(--color-highlight)] hover:shadow-2xl hover:scale-110 active:scale-90"
               >
                 <IconLinkedin width={30} height={30} />

@@ -24,7 +24,37 @@
 body {
     background-color: var(--color-background);
     color: var(--color-text);
-    overflow-x: hidden; 
+    overflow-x: hidden;
+}
+
+/* Accessibility - Focus styles */
+*:focus-visible {
+    outline: 2px solid var(--color-highlight);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--color-highlight);
+    outline-offset: 4px;
+}
+
+/* Skip to main content link for keyboard navigation */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-highlight);
+    color: var(--color-primary);
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 0 0 4px 0;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 section{

@@ -1,6 +1,5 @@
 "use client";
 
-import Head from "next/head";
 import React from "react";
 import "../gsap/effects";
 
@@ -14,11 +13,6 @@ import ContactCarousel from "@/components/ui/ContactCarousel/ContactCarousel";
 export default function Page() {
   return (
     <>
-      <Head>
-        <title>Diego Caviedes Website</title>
-        <meta name="description" content="Welcome to my personal website." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
       <main className="z-10 flex flex-col min-h-screen px-2 sm:px-0">
         <Background></Background>
         <section

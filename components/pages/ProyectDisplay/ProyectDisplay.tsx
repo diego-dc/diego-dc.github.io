@@ -120,9 +120,9 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
       <ScrollLineStatics>
         <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 relative aspect-video w-full rounded image-section">
           <Image
-            alt="ProjectImage"
+            alt={`${project.projectName} - Main project screenshot`}
             src={`${project.imageSrc}`}
-            title="ProjectImage"
+            title={project.projectName}
             objectFit="cover"
             fill
             className="rounded"
@@ -248,11 +248,11 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
 
       <div className="flex flex-col items-center justify-center w-4/5 space-y-12">
         {project.otherImages.map((imageSrc, i) => (
-          <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 relative aspect-video w-full rounded project-images">
+          <div key={i} className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 relative aspect-video w-full rounded project-images">
             <Image
-              alt={`ProjectImage${i}`}
+              alt={`${project.projectName} - Project screenshot ${i + 2}`}
               src={`${imageSrc}`}
-              title={`ProjectImage${i}`}
+              title={`${project.projectName} screenshot ${i + 2}`}
               objectFit="cover"
               fill
               className="rounded"
