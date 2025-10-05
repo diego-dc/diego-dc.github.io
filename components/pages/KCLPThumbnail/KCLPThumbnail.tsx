@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import "../../../gsap/effects";
 import { useGSAP } from "@gsap/react";
 import "./KCLPThumbnail.css";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 interface CustomCSSProperties extends React.CSSProperties {
   "--quantity"?: number;
@@ -30,7 +30,7 @@ const KCLPThumbnail = () => {
         stagger: 0.2,
         duration: 4,
       },
-      "-=3",
+      "-=3"
     );
 
     masterTimeline.from(
@@ -41,7 +41,7 @@ const KCLPThumbnail = () => {
         stagger: 0.2,
         duration: 3,
       },
-      "-=2",
+      "-=2"
     );
   }, []);
 
@@ -56,10 +56,11 @@ const KCLPThumbnail = () => {
             className="item"
             style={{ "--position": 1 } as CustomCSSProperties}
           >
-            <Image
+            <ExportedImage
               src="/img/IMG_01.JPG"
               alt="KCLP.ART digital art piece 1"
               fill={true}
+              sizes="200px"
               className="img-item"
             />
           </div>
@@ -67,10 +68,11 @@ const KCLPThumbnail = () => {
             className="item"
             style={{ "--position": 2 } as CustomCSSProperties}
           >
-            <Image
+            <ExportedImage
               src="/img/IMG_02.PNG"
               alt="KCLP.ART digital art piece 2"
               fill={true}
+              sizes="200px"
               className="img-item"
             />
           </div>
@@ -78,10 +80,11 @@ const KCLPThumbnail = () => {
             className="item"
             style={{ "--position": 3 } as CustomCSSProperties}
           >
-            <Image
+            <ExportedImage
               src="/img/IMG_03.JPG"
               alt="KCLP.ART digital art piece 3"
               fill={true}
+              sizes="200px"
               className="img-item"
             />
           </div>
@@ -89,10 +92,11 @@ const KCLPThumbnail = () => {
             className="item"
             style={{ "--position": 4 } as CustomCSSProperties}
           >
-            <Image
+            <ExportedImage
               src="/img/IMG_04.JPG"
               alt="KCLP.ART digital art piece 4"
               fill={true}
+              sizes="200px"
               className="img-item"
             />
           </div>
@@ -100,10 +104,11 @@ const KCLPThumbnail = () => {
             className="item"
             style={{ "--position": 5 } as CustomCSSProperties}
           >
-            <Image
+            <ExportedImage
               src="/img/IMG_05.JPG"
               alt="KCLP.ART digital art piece 5"
               fill={true}
+              sizes="200px"
               className="img-item"
             />
           </div>
@@ -111,10 +116,11 @@ const KCLPThumbnail = () => {
             className="item"
             style={{ "--position": 6 } as CustomCSSProperties}
           >
-            <Image
+            <ExportedImage
               src="/img/IMG_06.JPG"
               alt="KCLP.ART digital art piece 6"
               fill={true}
+              sizes="200px"
               className="img-item"
             />
           </div>
@@ -122,10 +128,11 @@ const KCLPThumbnail = () => {
             className="item"
             style={{ "--position": 7 } as CustomCSSProperties}
           >
-            <Image
+            <ExportedImage
               src="/img/IMG_07.JPG"
               alt="KCLP.ART digital art piece 7"
               fill={true}
+              sizes="200px"
               className="img-item"
             />
           </div>
@@ -133,10 +140,11 @@ const KCLPThumbnail = () => {
             className="item"
             style={{ "--position": 8 } as CustomCSSProperties}
           >
-            <Image
+            <ExportedImage
               src="/img/IMG_08.JPG"
               alt="KCLP.ART digital art piece 8"
               fill={true}
+              sizes="200px"
               className="img-item"
             />
           </div>
@@ -144,10 +152,11 @@ const KCLPThumbnail = () => {
             className="item"
             style={{ "--position": 9 } as CustomCSSProperties}
           >
-            <Image
+            <ExportedImage
               src="/img/IMG_09.JPG"
               alt="KCLP.ART digital art piece 9"
               fill={true}
+              sizes="200px"
               className="img-item"
             />
           </div>
@@ -155,10 +164,11 @@ const KCLPThumbnail = () => {
             className="item"
             style={{ "--position": 10 } as CustomCSSProperties}
           >
-            <Image
+            <ExportedImage
               src="/img/IMG_10.JPG"
               alt="KCLP.ART digital art piece 10"
               fill={true}
+              sizes="200px"
               className="img-item"
             />
           </div>
@@ -177,7 +187,7 @@ const KCLPThumbnail = () => {
           >
             <h1 className="md:hidden lg:block">Follow me on Instagram!</h1>
             <h1 className="hidden md:block lg:hidden">Follow me!</h1>
-            <Image
+            <ExportedImage
               src="/img/logos/Logo_KCLP_White.svg"
               alt="KCLP.ART logo - Follow on Instagram"
               className="img-item"

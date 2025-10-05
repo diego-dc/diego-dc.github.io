@@ -40,12 +40,21 @@ export const metadata: Metadata = {
     title: "Diego Caviedes - Full-Stack Developer",
     description:
       "Portfolio of Diego Caviedes, a Full-Stack Developer specializing in React, Next.js, and modern web technologies.",
+    images: [
+      {
+        url: "https://diego-dc.github.io/img/projects/diegc-website.png",
+        width: 1200,
+        height: 630,
+        alt: "Diego Caviedes Portfolio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Diego Caviedes - Full-Stack Developer",
     description:
       "Portfolio of Diego Caviedes, a Full-Stack Developer specializing in React, Next.js, and modern web technologies.",
+    images: ["https://diego-dc.github.io/img/projects/diegc-website.png"],
   },
 };
 

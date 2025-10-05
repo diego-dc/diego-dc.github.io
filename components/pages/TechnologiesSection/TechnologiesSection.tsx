@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -62,104 +62,104 @@ const TechnologiesSection = () => {
           <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 ">
             <div className="grid grid-cols-2 gap-12 md:grid-cols-5">
               <div className="flex items-center justify-center w-full h-14">
-                <Image
+                <ExportedImage
                   alt="CSS"
-                  width={0}
-                  height={0}
+                  width={100}
+                  height={100}
                   style={{ width: "auto", height: "100%" }}
                   src={"/img/logos/css-3.svg"}
                   title="CSS"
-                ></Image>
+                ></ExportedImage>
               </div>
               <div className="flex items-center justify-center w-full h-14">
-                <Image
+                <ExportedImage
                   alt="Python"
-                  width={0}
-                  height={0}
+                  width={100}
+                  height={100}
                   style={{ width: "auto", height: "100%" }}
                   src={"/img/logos/python-5.svg"}
                   title="Python"
-                ></Image>
+                ></ExportedImage>
               </div>
               <div className="flex items-center justify-center w-full h-14">
-                <Image
+                <ExportedImage
                   alt="Javascript"
-                  width={0}
-                  height={0}
+                  width={100}
+                  height={100}
                   style={{ width: "auto", height: "100%" }}
                   src={"/img/logos/logo-javascript.svg"}
                   title="Javascript"
-                ></Image>
+                ></ExportedImage>
               </div>
               <div className="flex items-center justify-center w-full h-14">
-                <Image
+                <ExportedImage
                   alt="React"
-                  width={0}
-                  height={0}
+                  width={100}
+                  height={100}
                   style={{ width: "auto", height: "100%" }}
                   src={"/img/logos/react-2.svg"}
                   title="React"
-                ></Image>
+                ></ExportedImage>
               </div>
               <div className="flex items-center justify-center w-full h-14">
-                <Image
+                <ExportedImage
                   alt="Django"
-                  width={0}
-                  height={0}
+                  width={100}
+                  height={100}
                   style={{ width: "auto", height: "100%" }}
                   src={"/img/logos/django.svg"}
                   title="Django"
-                ></Image>
+                ></ExportedImage>
               </div>
               <div className="flex items-center justify-center w-full h-14">
-                <Image
+                <ExportedImage
                   alt="Tailwind"
-                  width={0}
-                  height={0}
+                  width={100}
+                  height={100}
                   style={{ width: "auto", height: "100%" }}
                   src={"/img/logos/tailwind-css-1.svg"}
                   title="Tailwind"
-                ></Image>
+                ></ExportedImage>
               </div>
               <div className="flex items-center justify-center w-full h-14">
-                <Image
+                <ExportedImage
                   alt="Bootstrap"
-                  width={0}
-                  height={0}
+                  width={100}
+                  height={100}
                   style={{ width: "auto", height: "100%" }}
                   src={"/img/logos/bootstrap-5.svg"}
                   title="Bootstrap"
-                ></Image>
+                ></ExportedImage>
               </div>
               <div className="flex items-center justify-center w-full h-14">
-                <Image
+                <ExportedImage
                   alt="GSAP"
-                  width={0}
-                  height={0}
+                  width={100}
+                  height={100}
                   style={{ width: "auto", height: "100%" }}
                   src={"/img/logos/gsap-greensock.svg"}
                   title="GSAP"
-                ></Image>
+                ></ExportedImage>
               </div>
               <div className="flex items-center justify-center w-full h-14">
-                <Image
+                <ExportedImage
                   alt="Angular"
-                  width={0}
-                  height={0}
+                  width={100}
+                  height={100}
                   style={{ width: "auto", height: "100%" }}
                   src={"/img/logos/angular.svg"}
                   title="Angular"
-                ></Image>
+                ></ExportedImage>
               </div>
               <div className="flex items-center justify-center w-full h-14">
-                <Image
+                <ExportedImage
                   alt="NodeJs"
-                  width={0}
-                  height={0}
+                  width={100}
+                  height={100}
                   style={{ width: "auto", height: "100%" }}
                   src={"/img/logos/nodejs.svg"}
                   title="NodeJs"
-                ></Image>
+                ></ExportedImage>
               </div>
             </div>
           </div>

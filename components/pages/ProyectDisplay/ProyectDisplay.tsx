@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import Link from "next/link";
 
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import ScrollLineStatics from "../../ui/ScrollLineStatics/ScrollLineStatics";
 
 interface PortfolioData {
@@ -119,14 +119,15 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
 
       <ScrollLineStatics>
         <div className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 relative aspect-video w-full rounded image-section">
-          <Image
+          <ExportedImage
             alt={`${project.projectName} - Main project screenshot`}
             src={`${project.imageSrc}`}
             title={project.projectName}
             objectFit="cover"
             fill
+            sizes="(max-width: 768px) 100vw, 85vw"
             className="rounded"
-          ></Image>
+          ></ExportedImage>
         </div>
       </ScrollLineStatics>
 
@@ -252,14 +253,15 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
             key={i}
             className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 relative aspect-video w-full rounded project-images"
           >
-            <Image
+            <ExportedImage
               alt={`${project.projectName} - Project screenshot ${i + 2}`}
               src={`${imageSrc}`}
               title={`${project.projectName} screenshot ${i + 2}`}
               objectFit="cover"
               fill
+              sizes="(max-width: 768px) 100vw, 85vw"
               className="rounded"
-            ></Image>
+            ></ExportedImage>
           </div>
         ))}
       </div>

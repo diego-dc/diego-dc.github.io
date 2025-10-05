@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import React from "react";
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import "./AboutDraggable.css";
 import IconWindowExpand from "@/components/icons/IconWindowExpand";
 import IconXmark from "@/components/icons/IconXmark";
@@ -178,14 +178,14 @@ const AboutDraggable = () => {
                   </div>
                 </div>
                 <div className="p-0 m-0 font-medium markdown backdrop-blur-sm text-neutral">
-                  <Image
+                  <ExportedImage
                     src="/img/Portrait.JPG"
                     alt="Diego Caviedes - Professional portrait"
-                    width={0}
-                    height={0}
+                    width={800}
+                    height={800}
                     style={{ width: "100%", height: "auto" }}
                     className="img-item"
-                  ></Image>
+                  ></ExportedImage>
                 </div>
               </div>
             </div>

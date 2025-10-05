@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import "./ProjectCard.css";
 
 interface ProjectCardProps {
@@ -59,7 +59,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="image-card hidden 2xl:block opacity-45 2xl:group-hover/deck:-rotate-2 bg-[var(--color-accent)]"></div>
         <div className="image-card hidden 2xl:block opacity-60 2xl:group-hover/deck:-rotate-3 bg-[var(--color-accent)]"></div>
         <div className="image-card hidden 2xl:block opacity-75 2xl:group-hover/deck:rotate-[-4deg] bg-[var(--color-accent)]"></div>
-        <Image
+        <ExportedImage
           width={480}
           height={270}
           alt={`${projectName} - Project screenshot showcasing ${tags.join(", ")}`}
