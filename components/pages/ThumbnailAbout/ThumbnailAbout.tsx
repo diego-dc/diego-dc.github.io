@@ -36,7 +36,7 @@ const ThumbnailAbout = () => {
         rotateX: -90,
         duration: 1,
       },
-      "-=1",
+      "-=1"
     );
 
     if (thumbnail_title2.length > 0) {
@@ -50,7 +50,7 @@ const ThumbnailAbout = () => {
             stagger: 0.06,
             duration: 0.2,
           },
-          "-=1",
+          "-=1"
         ); // "+=0.2" para un pequeño retraso entre animaciones
       });
     }
@@ -63,7 +63,7 @@ const ThumbnailAbout = () => {
         stagger: 0.1,
         duration: 1,
       },
-      "-=2",
+      "-=2"
     );
 
     if (titles.length > 0) {
@@ -79,7 +79,7 @@ const ThumbnailAbout = () => {
               stagger: 0.2,
               duration: 1,
             },
-            "<",
+            "<"
           )
           .to(
             splitTitle.chars,
@@ -90,7 +90,7 @@ const ThumbnailAbout = () => {
               stagger: 0.1,
               duration: 1,
             },
-            "<3.5",
+            "<3.5"
           );
       });
     }
