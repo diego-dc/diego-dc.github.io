@@ -22,7 +22,9 @@ export async function generateStaticParams() {
 }
 
 // Generar metadata dinámica para cada proyecto
-export async function generateMetadata({ params }: PortfolioProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PortfolioProps): Promise<Metadata> {
   const { id } = params;
   const project = projects.find((item) => item.index === Number(id));
 
@@ -41,7 +43,7 @@ export async function generateMetadata({ params }: PortfolioProps): Promise<Meta
 export default function Page({ params }: PortfolioProps) {
   const { id } = params;
   const project = projects.find((item) => item.index === Number(id));
-  var nextProject = projects.find((item) => item.index === Number(id) + 1);
+  let nextProject = projects.find((item) => item.index === Number(id) + 1);
 
   if (!project) {
     return <div>Project Not Found</div>;

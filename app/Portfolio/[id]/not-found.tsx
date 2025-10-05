@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -11,7 +11,7 @@ export default function NotFound() {
           Project Not Found
         </p>
         <p className="text-sm md:text-base text-[var(--color-light)] opacity-70">
-          The project you're looking for doesn't exist.
+          The project you&apos;re looking for doesn&apos;t exist.
         </p>
         <Link
           href="/Portfolio"
@@ -21,5 +21,5 @@ export default function NotFound() {
         </Link>
       </div>
     </div>
-  )
+  );
 }

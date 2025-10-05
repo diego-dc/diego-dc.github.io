@@ -248,7 +248,10 @@ const ProyectDisplay: React.FC<ProyectDisplayProps> = ({ project }) => {
 
       <div className="flex flex-col items-center justify-center w-4/5 space-y-12">
         {project.otherImages.map((imageSrc, i) => (
-          <div key={i} className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 relative aspect-video w-full rounded project-images">
+          <div
+            key={i}
+            className="w-100 xl:w-[85%] bg-[rgb(16,16,16,0.25)] border border-[var(--color-light)] p-12 relative aspect-video w-full rounded project-images"
+          >
             <Image
               alt={`${project.projectName} - Project screenshot ${i + 2}`}
               src={`${imageSrc}`}

@@ -1,11 +1,14 @@
 import React from "react";
 
-interface IconProps {
+interface IconProps
+  extends Omit<
+    React.SVGProps<SVGSVGElement>,
+    "width" | "height" | "stroke" | "fill"
+  > {
   width?: string | number;
   height?: string | number;
   stroke?: string;
   fill?: string;
-  [key: string]: any;
 }
 
 const IconChevronRight: React.FC<IconProps> = ({

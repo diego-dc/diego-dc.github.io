@@ -30,7 +30,7 @@ const KCLPThumbnail = () => {
         stagger: 0.2,
         duration: 4,
       },
-      "-=3"
+      "-=3",
     );
 
     masterTimeline.from(
@@ -41,7 +41,7 @@ const KCLPThumbnail = () => {
         stagger: 0.2,
         duration: 3,
       },
-      "-=2"
+      "-=2",
     );
   }, []);
 

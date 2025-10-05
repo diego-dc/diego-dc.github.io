@@ -30,9 +30,9 @@ const PortfolioThumbnail = () => {
         </h2>
         <p className="w-5/6 sm:tex-md md:text-lg lg:text-xl text-slate-400 lg:w-3/5 subtitlePortfolio">
           {" "}
-          I'm always seeking my next project and striving to learn and grow
-          along the way. Here, you'll find a collection of the projects I've
-          worked on.{" "}
+          I&apos;m always seeking my next project and striving to learn and grow
+          along the way. Here, you&apos;ll find a collection of the projects
+          I&apos;ve worked on.{" "}
         </p>
       </div>
     </div>

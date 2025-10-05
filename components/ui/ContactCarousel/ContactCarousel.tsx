@@ -30,7 +30,7 @@ const ContactCarousel = () => {
 
   const handleSlideClick = (
     e: React.MouseEvent<HTMLDivElement>,
-    index: number
+    index: number,
   ) => {
     const target = e.target as HTMLElement;
     const swiperElement = target.closest(".swiper");

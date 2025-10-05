@@ -43,7 +43,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ limit = 3 }) => {
     if (projectCards.length > 0) {
       projectCards.forEach((projectCard) => {
         const projectTitle = projectCard.querySelector<HTMLElement>(
-          ".project-item-title"
+          ".project-item-title",
         );
         const projectTags =
           projectCard.querySelector<HTMLElement>(".project-item-tags");

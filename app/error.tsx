@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
 export default function Error({
   error,
   reset,
 }: {
-  error: Error & { digest?: string }
-  reset: () => void
+  error: Error & { digest?: string };
+  reset: () => void;
 }) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4">
@@ -17,7 +17,7 @@ export default function Error({
           Something went wrong
         </p>
         <p className="text-sm text-[var(--color-light)] opacity-70">
-          {error.message || 'An unexpected error occurred'}
+          {error.message || "An unexpected error occurred"}
         </p>
         <button
           onClick={() => reset()}
@@ -27,5 +27,5 @@ export default function Error({
         </button>
       </div>
     </div>
-  )
+  );
 }

@@ -119,7 +119,9 @@ const Navbar = () => {
             <button
               className="inline-flex items-center justify-center p-2 rounded-md"
               onClick={toggleNavbar}
-              aria-label={isClick ? "Close navigation menu" : "Open navigation menu"}
+              aria-label={
+                isClick ? "Close navigation menu" : "Open navigation menu"
+              }
               aria-expanded={isClick}
             >
               {isClick ? (
